@@ -1,4 +1,4 @@
-﻿# DIY Types
+﻿# Types and Type Components
 
 The Contexture ecosystem provides a defined list of types that can be
 used to perform a wide variety of different searches. Each type we
