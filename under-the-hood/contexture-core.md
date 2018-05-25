@@ -6,15 +6,18 @@ With this in mind, let's get some specifications.
 
 ## contexture's default export
 
-Contexture's default export is a function that receives a total of three parameters, where the first two parameters are curried. The first argument is expected to be a plain JavaScript Object with two keys:
+Contexture's default export is a function that receives a total of three parameters, where the first two parameters are curried.
+
+### Arguments and Return Values
+
+The first argument is expected to be a plain JavaScript Object with two keys:
 
 - `providers`: Should be an object where each key will have a [Contexture Provider](#TODO).
 - `schemas`: Should be an object where each key will have a [Contexture Schema](#TODO).
 
 Calling this function with this object only will return another function, which can be used as an asynchronous search runner. You can also pass in all the arguments as once, but the separation of parameters makes it easier to scope setting up the database providers, the types and the schemas from the search execution.
 
-Example declaration of a search function by passing the schema &
-providers object first:
+Example declaration of a search function by passing the schema & providers object first:
 
 ```javascript
 const search = Contexture({
@@ -43,3 +46,13 @@ DSL](#TODO)), and an optional object with the following properties:
 producing it's results, which can be used to send partial results over websockets for example. |
 
 This function, called at least up to the DSL search tree, will return a copy of the given search tree, filled with both properties needed to run the search, but also with the search results, which are assigned in the tree based on each one of the types that each specific search might be using. For more about how this happens, check out the [Contexture Types](#TODO).
+
+## The Algorithm
+
+_Coming soon..._
+
+- Initial values in the tree.
+- Flat lenses.
+- State flags.
+- Add filters.
+- DFS initialization.

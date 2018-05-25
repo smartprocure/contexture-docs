@@ -24,23 +24,10 @@
 
 ## DSL
 
-## Contexture Types
-- Group
-- Query
-- Filters (Terms)
-- Result
-
 ## Contexture Core
 - Contexture Default Export.
-  - Initialization Parameters.
   - Arguments and return values.
-  - What it does.
-    - Initial values in the tree.
-    - Flat lenses.
-    - State flags.
-    - Add filters.
-    - DFS initialization.
-  - Example usages.
+  - The Algorithm.
 - Core Utils.
 
 ## Contexture Providers

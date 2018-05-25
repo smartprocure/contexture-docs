@@ -21,7 +21,9 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
 * [Querying]()
   * Contexture DSL.
   * Available providers.
-  * Available types.
+* [Types]()
+  * [DIY Types]()
+  * [Example Types]()
 * [Components]()
 * [Managing State]()
   - MobX

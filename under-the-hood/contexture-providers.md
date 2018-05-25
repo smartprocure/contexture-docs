@@ -1,6 +1,6 @@
 ﻿# Contexture Providers
 
-The _Contexture Providers_ are an abstraction layer around the databases that can be targeted by any given search tree. Each Provider by itself is a function that is called for initialization, which expects the following parameters:
+The _Contexture Providers_ are an abstraction layer around the databases that can be targeted by any given search tree. Each Provider is a function that expects the following parameters:
 
 | Input Object Property | Meaning |
 | ------- | ------- |
@@ -17,4 +17,11 @@ This initialization retutns an object with:
 With that in mind, let's explore our currently available providers:
 
 ## contexture-mongo
+- Where the package lives
+- What it does
+- list of types (not much detail, link to the details docs)
+
 ## contexture-elasticsearch
+- Where the package lives
+- What it does
+- list of types (not much detail, link to the details docs)
