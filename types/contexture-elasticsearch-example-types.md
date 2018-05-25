@@ -15,4 +15,13 @@ Our ElasticSearch types are the following ones:
 
 ## [bool](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/bool.js)
 
-The bool type is intended to work as an ElasticSearch terms aggregation with only one value for a single property. This is useful for user interfaces with a checkbox to include or exclude a specific field from a search (or a specific field-value pair).
+The bool type is intended to work as an ElasticSearch terms
+aggregation with only one value for a single property. This is useful
+for user interfaces with a checkbox to include or exclude a specific
+field from a search (or a specific field-value pair).
+
+Here's the definition of this type:
+
+| Property Name | Type | Description |
+| --- | --- | --- |
+| field | String | Name of the field that we will include or exclude from the search. |

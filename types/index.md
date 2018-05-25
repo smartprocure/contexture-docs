@@ -13,6 +13,8 @@ your own types.
 
 ## How to Wite a Type
 
+### Provider Type
+
 Writing a type is as simple as exposing any valid string property name
 on the types object of a specific provider, then assigning a plain
 JavaScript Object value with one or more of the following properties:
@@ -44,6 +46,55 @@ let provider = MyProvider({
 })
 ```
 
+**Type names are not exclusive across providers**. You can define one
+type called `myAwesomeType` in more than one provider and you'll be
+able to keep the same required node properties, thus the same
+`hasValue`. This allows us to provide the same API for several types,
+and re-use code even if we switch the target database of the search.
+
+Once you have a provider type defined for one or more providers, you
+should write the same type for `contexture-client`.
+
+### Contexture Client Type
+
+Contexture Client already provides a bunch of types based on our
+`Example Types` (more on that later.) These type definitions help
+the client understand how a specific node affects every other node or
+itself.
+
+To create a custom type, you will need to think on the behaviors you
+might need for each one of the following properties:
+
+| Property Name | Type | Description |
+| --- | --- | --- |
+| `validate` | Function | Just as the Provider Type's `hasValue`, this function will let `contexture-client` know wether this node is valid for processing or not. |
+| `reactors` | Object | The Reactors is how each of the node properties might affect this node or other nodes. See our [Introduction to Reactors]() |
+| `defaults` | Object | This object will help in the initialization of the nodes of the tree of this specific type through the definition of some default values on the specified properties. |
+
+The example types are already included in any instantiation
+of Contexture Client's Contexture Tree. However, you can extend them
+with any type you need simply by complementing the exposed
+`exampleTypes` with your own. Here's an example where we initialize
+a `ContextureTree` with the available `exampleTypes`, and our new `myType`:
+
+```javascript
+import * as ContextureClient from 'contexture-client'
+let tree = ContextureTree({
+  types: {
+    ...ContextureClient.exampleTypes,
+    myType: {
+      validate: node => node.requiredProperty,
+      reactors: {
+        requiredProperty: 'others',
+      },
+      defaults: {
+        requiredProperty: false
+      }
+    }
+  }
+})
+```
+
 ## How to Write a UI Component for a Type
 
 Writing a ussr interface for any type can be as simple as writing an
@@ -64,14 +115,6 @@ let Component = node => (
 ```
 
 - Managing State
-
-## Shared Types
-
-**Type names are not exclusive across providers**. You can define one
-type called `myAwesomeType` in more than one provider and you'll be
-able to keep the same required node properties, thus the same
-`hasValue`. This allows us to provide the same API for several types,
-and re-use code even if we switch the target database of the search.
 
 ## The Example Types
 

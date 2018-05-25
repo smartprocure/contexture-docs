@@ -9,7 +9,7 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
   * [What is Contexture]()
   * [Map of Repos]()
   * [Brief History]()
-  * [Alternatives]()
+  * [Alternatives & Benchmarks]()
 * [Getting Started]()
   * [Project Setup & Use]()
   * [Connecting to Elasticsearch]()
@@ -19,9 +19,13 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
   * [Discovering the Database]()
     * [IMDB Index]()
 * [Querying]()
+  * Contexture Core.
   * Contexture DSL.
   * Available providers.
-* [Types]()
+* [Interactive Queries]()
+  * Contexture Client.
+  * Introduction to Reactors.
+* [Types and Type Components]()
   * [DIY Types]()
     * [How to Write a Type]()
     * [How to Write a UI Component for a Type]()
@@ -30,16 +34,16 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
   * [ElasticSearch Example Types]()
   * [Mongo Example Types]()
   * [Available React Components for our Types]()
-* [Components]()
+* [Other Components]()
 * [Managing State]()
   - MobX
   - Redux (Coming Soon)
 * [Theming]()
 * [Recommendations]()
   * [Architecture]()
-    - Client vs Server
-    - Type definitions
-    - Scaling
+    - Client vs Server.
+    - Type definitions.
+    - Scaling.
   * [Server Side Searches]()
     * [Searching On an Endpoint]()
     * [Caching]()
@@ -49,11 +53,11 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
     * [Cascading]()
 * [Under the Hood]()
   * [Design Principles]()
-  * Contexture Core
-    - Contexture initializer
-    - Providers
-    - Types
-    - Reactors
+  * Contexture Core.
+    - Contexture initializer.
+    - Providers.
+    - Types.
+    - Reactors in detail.
   * Contexture ElasticSearch
   * Contexture Mongo
   * Contexture Client
