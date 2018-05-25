@@ -24,7 +24,12 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
 * [Types]()
   * [DIY Types]()
     * [How to Write a Type]()
-  * [Example Types]()
+    * [How to Write a UI Component for a Type]()
+    * [Shared Types]()
+    * [The Example Types]()
+  * [ElasticSearch Example Types]()
+  * [Mongo Example Types]()
+  * [Available React Components for our Types]()
 * [Components]()
 * [Managing State]()
   - MobX
