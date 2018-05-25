@@ -2,14 +2,16 @@
 
 The Contexture ecosystem provides a defined list of types that can be
 used to perform a wide variety of different searches. Each type we
-offer also has a respective component in our contexture-react repo, so
-you can quickstart your search interfaces. However, even if our types are
-focused on the different search interfaces that we provide, our
-API is designed to allow you to build any type you might need for any
-other possible use case you might encounter.  We believe in making a
-generic framework so you can be creative on your search solutions.
-Because of that, we will start this chapter by explaining how to build
-your own types.
+offer also has a respective component in our `contexture-react` repo.
+We've made these components so you can quickstart your search interfaces!
+
+However, even if our types are focused on the different search interfaces
+we provide, our API is designed to allow you to build any type you might need
+for any other possible use case you might encounter.
+
+We believe in making a generic framework so you can be creative on your
+search solutions. Because of that, we will start this document by explaining
+how to build your own types.
 
 ## How to Wite a Type
 
