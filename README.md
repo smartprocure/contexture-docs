@@ -25,11 +25,11 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
 - [Interactive Queries]()
   - Contexture Client.
   - Introduction to Reactors.
-- **Types and Type Components**
-  - [DIY Types](types/index.md)
-    - [How to Write a Type](types/index.md#how-to-wite-a-type)
-    - [How to Write a UI Component for a Type](types/index.md#how-to-write-a-ui-component-for-a-type)
-    - [The Example Types](types/index.md#the-example-types)
+- [Types and Type Components](types/index.md)
+  - [DIY Types](types/diy-types.md)
+    - [How to Write a Type](types/diy-types.md#how-to-wite-a-type)
+    - [How to Write a UI Component for a Type](types/diy-types.md#how-to-write-a-ui-component-for-a-type)
+    - [The Example Types](types/diy-types.md#the-example-types)
   - [ElasticSearch Example Types]()
   - [Mongo Example Types]()
   - [Available React Components for our Types]()
