@@ -22,9 +22,17 @@
   - What updates.
   - Pauses.
 
-## Contexture Core
+## DSL
 
-- Initializer.
+## Contexture Types
+- Group
+- Query
+- Filters (Terms)
+- Result
+
+## Contexture Core
+- Contexture Default Export.
+  - Initialization Parameters.
   - Arguments and return values.
   - What it does.
     - Initial values in the tree.
@@ -35,4 +43,7 @@
   - Example usages.
 - Core Utils.
 
-## Contexture ElasticSearch
+## Contexture Providers
+  - Design Structure
+  - Contexture ElasticSearch
+  - Contexture Mongo
