@@ -23,6 +23,7 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
   * Available providers.
 * [Types]()
   * [DIY Types]()
+    * [How to Write a Type]()
   * [Example Types]()
 * [Components]()
 * [Managing State]()
