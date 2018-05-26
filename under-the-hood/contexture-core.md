@@ -4,11 +4,9 @@ The core of Contexture is a package of its own. Located at [github.com/smartproc
 
 With this in mind, let's get some specifications.
 
-## contexture's default export
+## Default Export
 
 Contexture's default export is a function that receives a total of three parameters, where the first two parameters are curried.
-
-### Arguments and Return Values
 
 The first argument is expected to be a plain JavaScript Object with two keys:
 
@@ -56,3 +54,5 @@ _Coming soon..._
 - State flags.
 - Add filters.
 - DFS initialization.
+
+## Utility Functions

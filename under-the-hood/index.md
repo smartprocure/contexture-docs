@@ -1,36 +1,14 @@
-﻿# Under The Hood
+﻿# Under the Hood
 
-## Design Principles
-
-- Intentionally stateless.
-- Detached from state management tools.
-- Can work well with state management tools.
-- Modern ES6+
-- Non-strict functional programming.
-- Configuration based architecture.
-- Focus on a very extensible small core.
-- Small DSL.
-  - Database agnostic.
-  - Isomorphic Tree State.
-  - Optimized for database discovery.
-  - Optimized for advanced search interfaces.
-  - Aiming to be effective for arbitrarily complex database indexes.
-  - Simplicity over performance.
-- Reaction management.
-  - Tree walking.
-  - State flags.
-  - What updates.
-  - Pauses.
-
-## DSL
-
-## Contexture Core
-- Contexture Default Export.
-  - Arguments and return values.
-  - The Algorithm.
-- Core Utils.
-
-## Contexture Providers
-  - Design Structure
-  - Contexture ElasticSearch
-  - Contexture Mongo
+Table of Contents:
+- [Design Principles](design-principles.md)
+- [Contexture Core](contexture-core.md)
+  - [Default Export](contexture-core.md#default-export)
+  - [The Algorithm](contexture-core.md#the-algorithm)
+  - [Utility Functions](contexture-core.md#utility-functions)
+- [Contexture Providers](index.md)
+  - [Contexture ElasticSearch]()
+  - [Contexture Mongo]()
+- [Contexture Client](contexture-client.md)
+  - [Reactors in detail](contexture-client.md#reactors-in-detail)
+- [Contexture React](contexture-react.md)
