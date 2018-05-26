@@ -1,4 +1,6 @@
-﻿# Types and Type Components
+﻿_[Parent](../README.md)_
+
+# Types and Type Components
 
 Table of Contents:
 - [DIY Types](diy-types.md)
