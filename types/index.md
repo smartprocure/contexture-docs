@@ -1,4 +1,4 @@
-﻿_[Parent](../README.md)_
+﻿[🔗 Parent](../README.md)
 
 # Types and Type Components
 
