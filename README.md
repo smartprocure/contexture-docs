@@ -21,7 +21,7 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
 - [Querying](querying/index.md)
   - [Contexture Core](querying/contexture-core.md)
   - [Contexture DSL](querying/contexture-dsl.md)
-  - [Available providers](querying/available-providers.md)
+  - [Available Providers](querying/available-providers.md)
 - [Interactive Queries](interactive-queries/index.md)
   - [Contexture Client](interactive-queries/contexture-client.md)
   - [Introduction to Reactors](interactive-queries/reactors.md)

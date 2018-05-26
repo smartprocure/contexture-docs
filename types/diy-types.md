@@ -9,9 +9,9 @@ However, even if our types are focused on the different search interfaces
 we provide, our API is designed to allow you to build any type you might need
 for any other possible use case you might encounter.
 
-We believe in making a generic framework so you can be creative on your
-search solutions. Because of that, we will start this document by explaining
-how to build your own types.
+We believe that making a generic framework will allow users to be
+creative on their search solutions. Because of that, we will start this
+document by explaining how to build your own types.
 
 ## How to Wite a Type
 
@@ -23,13 +23,13 @@ JavaScript Object value with one or more of the following properties:
 
 | Property | Type | Params (Type) | Return Value Type | What it does |
 | --- | --- | --- | --- | --- |
-| `hasValue` | Function | NodeSome Examples Object) | Boolean | Allows Contexture to know wether or not to process this search. |
+| `hasValue` | Function | Node (Object) | Boolean | Allows Contexture to know wether or not to process this search. |
 | `filter` | Function | Node (Object) | Object | Returns a query with the applied input values, which will be sent later to the database provider. |
-| `result` | Function | Node (Object), Search (Function) | Promise | Allows you to run a direct search for this type before Comtexture sends the full seaech with the whole tree. |
+| `result` | Function | Node (Object), Search (Function) | Promise | Allows running a direct search for this type before Comtexture sends the full seaech with the whole tree. |
 
-Once you have your type written, you can use it by sending it to an
-existing [Contexture Provider](#TODO). It should look more or less
-like:
+Once you have written a type, you can use it by sending it to an
+existing [Contexture Provider](../querying/available-providers.md). It
+should look more or less like:
 
 ```javascript
 let myType = {
