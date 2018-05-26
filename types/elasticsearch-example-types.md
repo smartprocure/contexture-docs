@@ -1,4 +1,7 @@
-﻿# ElasticSearch Example Types
+﻿[↩  Parent: README.md](../README.md)
+[↩  Previous: DIY Types](diy-types.md)
+
+# ElasticSearch Example Types
 
 Contexture is designed to target any database you might need. However,
 so far we have only inplemented database providers for the only
@@ -25,3 +28,5 @@ Here's the definition of this type:
 | Property Name | Type | Description |
 | --- | --- | --- |
 | field | String | Name of the field that we will include or exclude from the search. |
+
+[Next  ⃕: Mongo Example Types](mongo-example-types.md)

@@ -9,4 +9,4 @@ Table of Contents:
   - [The Example Types](diy-types.md#the-example-types)
 - [ElasticSearch Example Types](elasticsearch-example-types.md)
 - [Mongo Example Types](mongo-example-types.md)
-- [Available React Components for Types](example-types-react-components.md)
+- [Available React Components for Types](react-components.md)

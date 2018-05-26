@@ -1,4 +1,7 @@
-﻿# DIY Types
+﻿[↩  Parent: README.md](../README.md)
+[↩  Previous: Types and Type Components](index.md)
+
+# DIY Types
 
 The Contexture ecosystem provides a defined list of types that can be
 used to perform a wide variety of different searches. Each type we
@@ -17,13 +20,15 @@ document by explaining how to build your own types.
 
 Writing a new single type is about writing two plain JavaScript Objects:
 - One which is sent to the [Contexture Provider](../querying/available-providers.md).
-- Another one which is sent to the initialization of the [Contexture Tree](../interactive-queries/contexture-client.md#contexture-tree).
+- Another one which is sent to the initialization of the [Context Tree](../interactive-queries/contexture-client.md#context-tree).
 
 ### Provider Type
 
-Writing a type is as simple as exposing any valid string property name
-on the types object of a specific provider, then assigning a plain
-JavaScript Object value with one or more of the following properties:
+Initializing [Contexture Core](../querying/contexture-core.md)
+requires you to send a bunch of types per provider. A type on any
+provider is just a valid string property name on the object that is
+sent, accompanied with a corresponding value of a plain JavaScript
+Object with one or more of the following properties:
 
 | Property | Type | Params (Type) | Return Value Type | What it does |
 | --- | --- | --- | --- | --- |
@@ -58,12 +63,12 @@ able to keep the same required node properties, thus the same
 `hasValue`. This allows us to provide the same API for several types,
 and re-use code even if we switch the target database of the search.
 
-Once you have a provider type defined for one or more providers, you
-should write the same type for `contexture-client`.
+Once you have a type defined for one or more providers, you should
+write the same type for `contexture-client`.
 
 ### Contexture Client Type
 
-Contexture Client already provides a bunch of types based on our
+Contexture Client already provides a some types based on our
 `Example Types` (more on that later.) These type definitions help
 the client understand how a specific node affects every other node or
 itself.
@@ -78,14 +83,15 @@ might need for each one of the following properties:
 | `defaults` | Object | This object will help in the initialization of the nodes of the tree of this specific type through the definition of some default values on the specified properties. |
 
 The example types are already included in any instantiation
-of Contexture Client's Contexture Tree. However, you can extend them
-with any type you need simply by complementing the exposed
-`exampleTypes` with your own. Here's an example where we initialize
-a `ContextureTree` with the available `exampleTypes`, and our new `myType`:
+of Contexture Client's Contexture Tree. However, you can add any type
+you need simply by extending the exposed `exampleTypes` with your own.
+In the following snippet, we initialize a `ContextureTree` with the
+available `exampleTypes`, and our new `myType`:
 
 ```javascript
 import * as ContextureClient from 'contexture-client'
-let tree = ContextureTree({
+
+let tree = ContextureClient.ContextTree({
   types: {
     ...ContextureClient.exampleTypes,
     myType: {
@@ -98,19 +104,52 @@ let tree = ContextureTree({
       }
     }
   }
+}, {
+  // Here we will have the underlying tree
 })
 ```
 
 ## How to Write a UI Component for a Type
 
-Writing a ussr interface for any type can be as simple as writing an
-HTML or JSX Element that will render or write into any property of the
-type, for example, using our custom type `myType`, we could write an
-input field that, onChange, will write the field's value into the
-`requiredProperty`. For example:
+Writing a user interface for any type can be as simple as writing an
+HTML or JSX Element that will render or modify any property of the
+any node of an existing Contexture Tree, for example, using our custom
+type `myType`, we could write an input field that, onChange, will
+write the field's value into the `requiredProperty`. For example:
 
 ```javascript
-let Component = node => (
+// This is ES6+ and JSX
+
+import * as ContextureClient from 'contexture-client'
+
+let tree = ContextureClient.ContextTree(
+  {
+    service: myService,
+    types: {
+      ...ContextureClient.exampleTypes,
+      myType: {
+        validate: node => node.requiredProperty,
+        reactors: {
+          requiredProperty: 'others',
+        },
+        defaults: {
+          requiredProperty: false
+        }
+      }
+    }
+  }, {
+    key: 'root',
+    join: 'and',
+    children: [{
+      key: 'myNode',
+      type: 'myType',
+    }]
+  }
+)
+
+let node = tree.getNode(['root', 'myNode'])
+
+let Component = ({ node }) => (
   <input
     type="text"
     onChange={e => {
@@ -120,7 +159,10 @@ let Component = node => (
 )
 ```
 
-- Managing State
+Now that you have a component you can render it and play with it, but
+the component won't render by itself. If you want to see examples of
+custom components with automatic updates, please look at our [Managing
+State Guide](../managing-state/index.md).
 
 ## The Example Types
 
@@ -134,3 +176,5 @@ serve as a guide to build any other type you might need for your
 application. You can also **extend our example types**, simply by
 assigning new types as properties on the objects exposed by
 `contexture-elasticsearch` and `contexture-mongo`.
+
+[Next  ⃕: ElasticSearch Example Types](elasticsearch-example-types.md)
