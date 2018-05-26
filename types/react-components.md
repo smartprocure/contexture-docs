@@ -1,4 +1,4 @@
-﻿[↩  Parent: README.md](../README.md)
+﻿[↩  Parent: Table of Contents](../README.md)  
 [↩  Previous: Mongo Example Types](mongo-example-types.md)
 
 # MongoDB Example Types

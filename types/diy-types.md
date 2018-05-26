@@ -1,4 +1,4 @@
-﻿[↩  Parent: README.md](../README.md)
+﻿[↩  Parent: Table of Contents](../README.md)  
 [↩  Previous: Types and Type Components](index.md)
 
 # DIY Types

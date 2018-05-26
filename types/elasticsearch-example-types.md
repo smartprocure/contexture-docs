@@ -1,4 +1,4 @@
-﻿[↩  Parent: README.md](../README.md)
+﻿[↩  Parent: Table of Contents](../README.md)  
 [↩  Previous: DIY Types](diy-types.md)
 
 # ElasticSearch Example Types
