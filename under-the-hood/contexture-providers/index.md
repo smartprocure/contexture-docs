@@ -1,4 +1,6 @@
-﻿# Contexture Providers
+﻿[↩  Parent](../index.md)
+
+ # Contexture Providers
 
 The _Contexture Providers_ are an abstraction layer around the databases that can be targeted by any given search tree. Each Provider is a function that expects the following parameters:
 

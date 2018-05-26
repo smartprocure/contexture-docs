@@ -1,4 +1,6 @@
-﻿# Interactive Queries
+﻿[↩  Parent](../README.md)
+
+# Interactive Queries
 
 Table of Contents:
 - [Contexture Client](contexture-client.md)

@@ -1,4 +1,6 @@
-﻿# Querying
+﻿[↩  Parent](../README.md)
+
+ # Querying
 
 Table of Contents:
 - [Contexture Core](contexture-core.md)

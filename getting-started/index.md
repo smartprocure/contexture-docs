@@ -1,4 +1,6 @@
-﻿# Getting Started
+﻿[↩  Parent](../README.md)
+
+# Getting Started
 
 Table of Contents:
 - [Project Setup & Use](getting-started/setup.md)
