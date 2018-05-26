@@ -1,4 +1,4 @@
-﻿[↩  Parent](../README.md)
+﻿[↩  Parent: Table of Contents](../README.md)
 
  # Querying
 
