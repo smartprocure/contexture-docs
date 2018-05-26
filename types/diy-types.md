@@ -1,5 +1,5 @@
 ﻿[↩  Parent: Table of Contents](../README.md)  
-[↩  Previous: Types and Type Components](index.md)
+[↩  Previous: Types and Type Components](README.md)
 
 # DIY Types
 

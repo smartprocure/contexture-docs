@@ -8,7 +8,7 @@ Table of Contents:
   - [Default Export](contexture-core.md#default-export)
   - [The Algorithm](contexture-core.md#the-algorithm)
   - [Utility Functions](contexture-core.md#utility-functions)
-- [Contexture Providers](contexture-providers/index.md)
+- [Contexture Providers](contexture-providers/README.md)
   - [Contexture ElasticSearch](contexture-providers/contexture-elasticsearch.md)
   - [Contexture Mongo](contexture-providers/contexture-mongo.md)
 - [Contexture Client](contexture-client.md)
