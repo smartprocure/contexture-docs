@@ -3,4 +3,4 @@
 
 # MongoDB Example Types
 
-[↪ Next: Available React Components for Types](react-components.md)
+[↪ Next: Other Components](../other-components/README.md)
