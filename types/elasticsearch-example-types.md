@@ -29,4 +29,4 @@ Here's the definition of this type:
 | --- | --- | --- |
 | field | String | Name of the field that we will include or exclude from the search. |
 
-[Next  ⃕: Mongo Example Types](mongo-example-types.md)
+[↪ Next: Mongo Example Types](mongo-example-types.md)

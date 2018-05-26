@@ -177,4 +177,4 @@ application. You can also **extend our example types**, simply by
 assigning new types as properties on the objects exposed by
 `contexture-elasticsearch` and `contexture-mongo`.
 
-[Next  ⃕: ElasticSearch Example Types](elasticsearch-example-types.md)
+[↪ Next: ElasticSearch Example Types](elasticsearch-example-types.md)
