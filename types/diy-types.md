@@ -5,15 +5,19 @@ used to perform a wide variety of different searches. Each type we
 offer also has a respective component in our `contexture-react` repo.
 We've made these components so you can quickstart your search interfaces!
 
-However, even if our types are focused on the different search interfaces
-we provide, our API is designed to allow you to build any type you might need
-for any other possible use case you might encounter.
+Even if our types are focused on the different search interfaces we
+provide, our API is designed to allow you to build any type you might
+need for any other possible use case you might encounter.
 
 We believe that making a generic framework will allow users to be
 creative on their search solutions. Because of that, we will start this
 document by explaining how to build your own types.
 
 ## How to Wite a Type
+
+Writing a new single type is about writing two plain JavaScript Objects:
+- One which is sent to the [Contexture Provider](../querying/available-providers.md).
+- Another one which is sent to the initialization of the [Contexture Tree](../interactive-queries/contexture-client.md#contexture-tree).
 
 ### Provider Type
 
