@@ -7,10 +7,10 @@
 
 > NOUN
 > 1. The fact or manner of being woven or linked together to form a
-> connected whole.
-> 1.1. A mass of things interwoven together; a fabric.
+> connected whole.  
+> 1.1. A mass of things interwoven together; a fabric.  
 > 1.2. The putting together of words and sentences in connected
-> composition; the construct of a text.
+> composition; the construct of a text.  
 > 1.3. A connected literary structure; a continuous text.
 
 [Source](https://en.oxforddictionaries.com/definition/us/contexture).
