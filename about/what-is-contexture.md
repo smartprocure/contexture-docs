@@ -38,10 +38,10 @@ them to be nested in advanced searches with boolean joins like
 `and`/`or`/`not`.
 
 This thought process will become more clear as we progress through the
-docs. Hopefully, some pages later it will become clear how we provide
-a new perspective on building search interfaces, and perhaps even how
-you can use it to power up your business just like we have been doing
-for almost a decade.
+docs. Hopefully, some pages later it will be easy to grasp how we
+provide a new perspective on building search interfaces, and perhaps
+even how you can use it to power up your business just like we have
+been doing for almost a decade.
 
 [↪ Next: Glossary of Terms](glossary-of-terms.md)  
 [↪ Or perhaps you want to jump to: Map of Repos](map-of-repos.md)
