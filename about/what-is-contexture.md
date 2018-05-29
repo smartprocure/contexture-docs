@@ -26,7 +26,7 @@ search inputs, each one representing some useful abstraction of a
 search filter (like a search input or a tags filter), then using the
 values to process the DSL into one or more different database query
 languages, running the underlying searches as optimized as possible,
-then return these values on the respective sections of the DSL, so
+then returning these values on the respective sections of the DSL, so
 that each result can update each one of the components of the user
 interface.
 
