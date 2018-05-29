@@ -148,13 +148,14 @@ pass a providers object, which has the provider for `mongo`. This
 the schemas, so you could change this property name to something
 entirely different. When we send the mongo provider, we assign the
 result of the initialization of `contexture-mongo`, where we send the
-`contxture-mongo/types` and a `getClient` function. In a real
-schenario, you would just send the object that results of
-`require('mongodb')`. However, to provide an exceutable example in the
-browser, we've made a very small Mock of MongoDB where we will return
-a same object for any collection call, which will only allow fake
-aggregations, which will have a promise `toArray` function that will
-return our `Unrealistic result example`.
+`contxture-mongo/types` (which **needs to be called as a function once
+required**) and a `getClient` function. In a real schenario, you would
+just send the object that results of `require('mongodb')`. However, to
+provide an exceutable example in the browser, we've made a very small
+Mock of MongoDB where we will return a same object for any collection
+call, which will only allow fake aggregations, which will have a
+promise `toArray` function that will return our `Unrealistic result
+example`.
 
 Keep in mind that since `contexture` returns a promise, you can change
 `await contexture({ /* .. */ })` to `contexture({ /* .. */ }).then()`,
