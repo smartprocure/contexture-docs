@@ -3,14 +3,14 @@
 # Getting Started
 
 Table of Contents:
-- [Project Setup & Use](setup.md)
+- [Project Setup](setup.md)
   - [Install Node 9 and NPM](setup.md#installing-node-9-and-npm)
   - [Install Contexture](setup.md#installing-contexture)
   - [Install Contexture Client](setup.md#installing-contexture-client)
   - [Install Contexture ElasticSearch](setup.md#installing-contexture-elasticsearch)
   - [Install Contexture Mongo](setup.md#installing-contexture-mongo)
   - [Install Contexture React](setup.md#installing-contexture-react)
-  - [Write your first Contexture script](setup.md#your-first-contexture-script)
+- [A First Contexture Script](first-script.md)
 - [Connecting to Elasticsearch & MongoDB](connecting.md)
 - [Connecting to Other Databases](connecting-other-databases.md)
 - [Simple Search Box](simple-search-box.md)

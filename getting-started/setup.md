@@ -1,10 +1,10 @@
 ﻿[↩  Parent: Table of Contents](../README.md)  
 [↩  Previous: Getting Started](README.md)
 
-# Project Setup & Use
+# Project Setup
 
 The whole Contexture Framework is available through NPM. It doesn't
-have any extra dependency besides Node 9+. In this quick guide, we'll
+have any extra dependency besides Node 9. In this quick guide, we'll
 achieve the following goals:
 
 - [Install Node 9 and NPM](./setup.md#installing-node-9-and-npm)
@@ -13,7 +13,11 @@ achieve the following goals:
 - [Install Contexture ElasticSearch](./setup.md#installing-contexture-elasticsearch)
 - [Install Contexture Mongo](./setup.md#installing-contexture-mongo)
 - [Install Contexture React](./setup.md#installing-contexture-react)
-- [Write your first Contexture script](./setup.md#your-first-contexture-script)
+
+**Note:** as you progress through our documentation, you'll discover
+that in some cases, you will need only one or two of these
+repositories. This page just provides the fastest start we can come up
+with.
 
 ## Installing Node 9 and NPM
 
@@ -37,36 +41,34 @@ Once you have NodeJS and NPM installed, you'll need either a new
 folder for your new project with Contexture, or to go to an existing
 project, then run:
 
-    npm install contexture
+    npm install --save contexture
 
 ## Installing Contexture Client
 
 To install the `contexture-client` you can also run the followign
 command in your project's root folder:
 
-    npm install contexture-client
+    npm install --save contexture-client
 
 ## Installing Contexture ElasticSearch
 
 To install the `contexture-elasticsearch` you can also run the followign
 command in your project's root folder:
 
-    npm install contexture-elasticsearch
+    npm install --save contexture-elasticsearch
 
 ## Installing Contexture Mongo
 
 To install the `contexture-mongo` you can also run the followign
 command in your project's root folder:
 
-    npm install contexture-mongo
+    npm install --save contexture-mongo
 
 ## Installing Contexture React
 
 To install the `contexture-react` you can also run the followign
 command in your project's root folder:
 
-    npm install contexture-react
- 
-## Your First Contexture Script
+    npm install --save contexture-react
 
-[↪ Next: Connecting to ElasticSearch & MongoDB](connecting.md)
+[↪ Next: A First Contexture Script](first-script.md)

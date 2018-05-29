@@ -19,3 +19,7 @@
   - State flags.
   - What updates.
   - Pauses.
+- Why types?
+- Why a results type?
+- Why schemas?
+- Why providers?
