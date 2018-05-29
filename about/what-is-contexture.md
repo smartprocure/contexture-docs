@@ -16,7 +16,7 @@ this tool is ultimately yours to take.
 A quick search over the Internet would reveal that the word
 `contexture` means: `the fact or manner of being woven or linked
 together to form a connected whole` or even `the putting together of
-words and sentences in connected compoition; the construction of a
+words and sentences in connected composition; the construction of a
 text`.
 
 With this word we are trying to expose not only our ultimate
