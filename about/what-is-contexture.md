@@ -1,7 +1,7 @@
-﻿[↩  Parent: Table of Contents](../README.md)
+﻿[↩  Parent: Table of Contents](../README.md)  
 [↩  Previous: About Contexture](README.md)
 
-# Next
+# What Is Contexture
 
 People of the Internet, here we officialy introduce you to
 `contexture`, our framework for building search interfaces.
@@ -43,5 +43,5 @@ new perspective on building search interfaces, and perhaps even how
 you can use it to power up your business just like we have been doing
 for almost a decade.
 
-[↪ Next: Glossary of Terms](glossary-of-terms.md)
+[↪ Next: Glossary of Terms](glossary-of-terms.md)  
 [↪ Or perhaps you want to jump to: Map of Repos](map-of-repos.md)

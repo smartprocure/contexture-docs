@@ -1,4 +1,4 @@
-﻿[↩  Parent: Table of Contents](../README.md)
+﻿[↩  Parent: Table of Contents](../README.md)  
 [↩  Previous: Glossary of Terms](glossary-of-terms.md)
 
 # Map of Repos

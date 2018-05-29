@@ -1,4 +1,4 @@
-﻿[↩  Parent: Table of Contents](../README.md)
+﻿[↩  Parent: Table of Contents](../README.md)  
 [↩  Previous: What is Contexture](what-is-contexture.md)
 
 # Glossary of Terms
