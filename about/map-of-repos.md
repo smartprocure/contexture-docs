@@ -24,7 +24,7 @@ You can read more about the core here:
 ## Contexture Providers
 
 The Contexture Providers are the interfacing layer that ties the
-Contexture DSL to the tartgetted databases. So far, we have only two
+Contexture DSL to the targeted databases. So far, we have only two
 open source providers:
 
 - [contexture-elasticsearch](https://github.com/smartprocure/contexture-elasticsearch),
