@@ -10,8 +10,8 @@ This framework is carefully designed to be a generic solution for a
 universe of unlimited possible search interfaces. We've started with a
 minimal set of repositories that are representative of tools that
 empower our business, but are intended to be merely examples. If
-anything, our approaches are merely use cases, for the ultimate
-potential of this tool is ultimately yours to take.
+anything, our approaches are merely use cases, for the potential of
+this tool is ultimately yours to take.
 
 A quick search over the Internet would reveal that the word
 `contexture` means: `the fact or manner of being woven or linked
