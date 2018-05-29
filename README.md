@@ -7,6 +7,7 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
 
 - [About Contexture](about/README.md)
   - [What is Contexture](about/what-is-contexture.md)
+  - [Glossary of Terms](about/glossary-of-terms.md)
   - [Map of Repos](about/map-of-repos.md)
   - [Brief History](about/brief-history.md)
   - [Alternatives & Benchmarks](about/alternatives-benchmarks.md)
