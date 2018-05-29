@@ -5,7 +5,8 @@
 
 The Contexture framework comes to life through a list of repositories
 that individually specialize in some needed layer for our
-architecture. Let's explore the repos we have so far:
+architecture. We will be using most (if not all) of these projects in
+our upcoming pages. Let's explore the repos we have so far:
 
 ## Contexture Core
 
@@ -19,7 +20,7 @@ queries described in a copy of the received DSL.
 You can read more about the core here:
 - [In the repository](https://github.com/smartprocure/contexture).
 - In our [docs about querying (Contexture Core section)](../querying/contexture-core.md).
-- In our [under the hood docs (Contexture Core section)](../under-the-hood/contexture-core.md).
+- Or with greater detail in our [under the hood docs (Contexture Core section)](../under-the-hood/contexture-core.md).
 
 ## Contexture Providers
 
@@ -40,6 +41,29 @@ tools. Help us grow together!
 
 You can read more about Contexture Providers here:
 - In our [docs about querying (Available Providers section)](../querying/available-providers.md).
-- In our [under the hood docs (Contexture Providers section)](../under-the-hood/contexture-providers/README.md).
+- In with greater detail in our [under the hood docs (Contexture Providers section)](../under-the-hood/contexture-providers/README.md).
+
+## Contexture Client
+
+The Contexture Client is responsible for triggering behaviors on the
+search interfaces by knowing what causes changes in one or more
+elements of the search tree. It is the key piece of technology that
+allows our search interfaces to work in real time.
+
+You can read more about the Contexture Client here:
+- [In the repository](https://github.com/smartprocure/contexture-client).
+- [In the repository] - In our [docs about querying (Contexture Client section)](../interactive-queries/contexture-client.md).
+- Or with greater detail in our [under the hood docs (Contexture Client section)](../under-the-hood/contexture-client.md).
+
+## Contexture React
+
+The Contexture React repository holds a list of components that
+facilitate building search interfaces. They are mainly graphical
+representations of the types that exist on our Contexture Providers.
+
+You can read more about the Contexture React:
+- [In the repository](https://github.com/smartprocure/contexture-client).
+- In our guide for the [Available React Components for Types](./types/react-components.md).
+- Or in greater detail in our [under the hood docs (Contexture React section)](under-the-hood/contexture-react.md).
 
 [↪ Next: Brief History](brief-history.md)
