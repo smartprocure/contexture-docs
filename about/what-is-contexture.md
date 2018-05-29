@@ -38,8 +38,8 @@ them to be nested in advanced searches with boolean joins like
 `and`/`or`/`not`.
 
 This thought process will become more clear as we progress through the
-docs. Hopefully some pages later it will become clear how we provide a
-new perspective on building search interfaces, and perhaps even how
+docs. Hopefully, some pages later it will become clear how we provide
+a new perspective on building search interfaces, and perhaps even how
 you can use it to power up your business just like we have been doing
 for almost a decade.
 
