@@ -1,7 +1,7 @@
 ﻿[↩  Parent: Table of Contents](../README.md)  
 [↩  Previous: Brief History](brief-history.md)
 
-# Brief History
+# Alternatives & Benchmarks
 
     TODO
 
