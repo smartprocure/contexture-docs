@@ -52,7 +52,7 @@ allows our search interfaces to work in real time.
 
 You can read more about the Contexture Client here:
 - [In the repository](https://github.com/smartprocure/contexture-client).
-- [In the repository] - In our [docs about querying (Contexture Client section)](../interactive-queries/contexture-client.md).
+- In our [docs about querying (Contexture Client section)](../interactive-queries/contexture-client.md).
 - Or with greater detail in our [under the hood docs (Contexture Client section)](../under-the-hood/contexture-client.md).
 
 ## Contexture React
