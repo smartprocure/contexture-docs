@@ -63,6 +63,8 @@ will transform any given query into a working ElasticSearch query,
 which will be sent to the database to retrieve the data. Let's examine
 this code in greater detail.
 
+1. The Dependencies
+
 ```javascript
 let Contexture = require('contexture')
 let provider = require('contexture-elasticsearch')
@@ -219,6 +221,8 @@ The code above will provide a working search function `runSearch` that
 will transform any given query into a working MongoDB query,
 which will be sent to the database to retrieve the data. Let's examine
 this code in greater detail.
+
+1. The Dependencies
 
 ```javascript
 let Contexture = require('contexture')
