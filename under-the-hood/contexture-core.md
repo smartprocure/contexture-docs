@@ -35,13 +35,15 @@ const search = Contexture({
 ```
 
 The other two parameters are the search tree (the [Contexture
-DSL](#TODO)), and an optional object with the following properties:
+DSL](#TODO)), and an optional object that will be sent along to the
+provider's `runSearch` function as the first parameter, that can
+contain any property, but that should at least contain the following
+properties:
 
 | Option | Description |
 | ------ | ----------- |
 | `debug`| Sends `_meta` as part of the response, which includes per node request records, relevant filters, and other debug info. |
-| `onResult` | A callback which is called whenever a node finishes
-producing it's results, which can be used to send partial results over websockets for example. |
+| `onResult` | A callback which is called whenever a node finishes producing it's results, which can be used to send partial results over websockets for example. |
 
 This function, called at least up to the DSL search tree, will return a copy of the given search tree, filled with both properties needed to run the search, but also with the search results, which are assigned in the tree based on each one of the types that each specific search might be using. For more about how this happens, check out the [Contexture Types](#TODO).
 

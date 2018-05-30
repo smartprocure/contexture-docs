@@ -11,6 +11,7 @@ Table of Contents:
 - [Contexture Providers](contexture-providers/README.md)
   - [Contexture ElasticSearch](contexture-providers/contexture-elasticsearch.md)
   - [Contexture Mongo](contexture-providers/contexture-mongo.md)
+  - [Building Your Own Provider](contexture-providers/building-your-own-provider.md)
 - [Contexture Client](contexture-client.md)
   - [Reactors in detail](contexture-client.md#reactors-in-detail)
 - [Contexture React](contexture-react.md)

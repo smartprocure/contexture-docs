@@ -42,7 +42,7 @@ let schemas = {
   }
 }
 
-let runSearch = Contexture({
+let search = Contexture({
   schemas,
   providers: {
     elasticsearch: provider({
@@ -58,7 +58,7 @@ let runSearch = Contexture({
 })
 ```
 
-The code above will provide a working search function `runSearch` that
+The code above will provide a working search function `search` that
 will transform any given query into a working ElasticSearch query,
 which will be sent to the database to retrieve the data. Let's examine
 this code in greater detail.
@@ -151,7 +151,7 @@ You can read more about these here:
 4. Our Search Function
 
 ```javascript
-let runSearch = Contexture({
+let search = Contexture({
   schemas,
   providers: {
     elasticsearch: provider({
@@ -167,7 +167,7 @@ let runSearch = Contexture({
 })
 ```
 
-Once we have the schemas set, we can create our `runSearch` function.
+Once we have the schemas set, we can create our `search` function.
 For this purpose, we will be calling `Contexture` with just one
 object. This object will have the `schemas`, and the `providers`. The
 providers will host just one key/value, the one specific for
@@ -176,7 +176,7 @@ the script, needs to be called with the `getClient` function we just
 created and the `types()` that we got from the
 `contexture-elasticsearch/types` repository. We also show that you can
 customize the request headers by providing an object that includes the
-headers keys and values. This `runSearch` function is ready to receive
+headers keys and values. This `search` function is ready to receive
 search trees and write the results back!
 
 You can read more about these topics in the following links:
@@ -207,10 +207,10 @@ let schemas = {
   }
 }
 
-let runSearch = null
+let search = null
 
 MongoClient.connect('mongodb://localhost:27017', function(err, client) {
-  runSearch = Contexture({
+  search = Contexture({
     schemas,
     providers: {
       mongo: provider({
@@ -222,7 +222,7 @@ MongoClient.connect('mongodb://localhost:27017', function(err, client) {
 })
 ```
 
-The code above will provide a working search function `runSearch` that
+The code above will provide a working search function `search` that
 will transform any given query into a working MongoDB query,
 which will be sent to the database to retrieve the data. Let's examine
 this code in greater detail.
@@ -280,10 +280,10 @@ You can read more about these here:
 3. The MongoDB Client & Our Search Function
 
 ```javascript
-let runSearch = null
+let search = null
 
 MongoClient.connect('mongodb://localhost:27017', function(err, client) {
-  runSearch = Contexture({
+  search = Contexture({
     schemas,
     providers: {
       mongo: provider({
@@ -299,7 +299,7 @@ Next we will need to connect to MongoDB. In the previous code, we
 provide an example in which we connect to `mongodb://localhost:27017`,
 and using a callback to the `connect` method, we are able to obtain
 the database client that we need. Once we have this client, we can
-actually create our `runSearch` function.  For this purpose, we will
+actually create our `search` function.  For this purpose, we will
 be calling `Contexture` with just one object. This object will have
 the `schemas`, and the `providers`. The providers will host just one
 key/value, the one specific for `mongo`. The provider, which

@@ -71,6 +71,7 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
   - [Contexture Providers](under-the-hood/contexture-providers/README.md)
     - [Contexture ElasticSearch](under-the-hood/contexture-providers/)
     - [Contexture Mongo](under-the-hood/contexture-providers/)
+    - [Building Your Own Provider](under-the-hood/contexture-providers/building-your-own-provider.md)
   - [Contexture Client](under-the-hood/contexture-client.md)
     - [Lenses](under-the-hood/contexture-client.md#lenses)
     - [Reactors in detail](under-the-hood/contexture-client.md#reactors-in-detail)
