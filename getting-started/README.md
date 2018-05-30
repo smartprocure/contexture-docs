@@ -12,6 +12,8 @@ Table of Contents:
   - [Install Contexture React](setup.md#installing-contexture-react)
 - [A First Contexture Script](first-script.md)
 - [Connecting to Elasticsearch & MongoDB](connecting.md)
+  - [Connecting to ElasticSearch](connecting.md#connecting-to-elasticsearch.md)
+  - [Connecting to MongoDB](connecting.md#connecting-to-mongodb.md)
 - [Connecting to Other Databases](connecting-other-databases.md)
 - [Simple Search Box](simple-search-box.md)
 - [Your First Filter](your-first-filter.md)

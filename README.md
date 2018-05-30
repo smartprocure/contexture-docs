@@ -21,6 +21,8 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
     - [Install Contexture React](getting-started/setup.md#installing-contexture-react)
   - [A First Contexture Script](getting-started/first-script.md)
   - [Connecting to Elasticsearch & MongoDB](getting-started/connecting.md)
+    - [Connecting to ElasticSearch](getting-started/connecting.md#connecting-to-elasticsearch.md)
+    - [Connecting to MongoDB](getting-started/connecting.md#connecting-to-mongodb.md)
   - [Connecting to Other Databases](getting-started/connecting-other-databases.md)
   - [Simple Search Box](getting-started/simple-search-box.md)
   - [Your First Filter](getting-started/your-first-filter.md)
