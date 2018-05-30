@@ -30,6 +30,8 @@ then returning these values on the respective sections of the DSL, so
 that each result can update each one of the components of the user
 interface.
 
+![Diagram](https://i.imgur.com/L96DVYh.png)
+
 The canonical example of a Contexture Node is faceted search, where
 you have a checkbox list that is both a filter (in the sense that it
 restricts results based on the checked values) and an aggregation
