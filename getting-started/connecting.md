@@ -89,6 +89,7 @@ Please feel free to dig around these topics by following these links:
 - [ElasticSearch.js](https://github.com/elastic/elasticsearch-js).
 - [AgentKeepAlive](https://github.com/node-modules/agentkeepalive).
 
+2. The ElasticSearch Client
 
 ```javascript
 let elasticClient = null
@@ -117,6 +118,8 @@ links:
 
 - [ElasticSearch.js docs on configuration](https://github.com/elastic/elasticsearch-js/blob/master/docs/configuration.asciidoc).
 
+3. The Schemas
+
 ```javascript
 let schemas = {
   elasticsearch: {
@@ -144,6 +147,8 @@ You can read more about these here:
 
 - [contexture-elasticsearch repository](https://github.com/smartprocure/contexture-elasticsearch).
 - [Schemas section on our Querying docs](../querying/schemas.md).
+
+4. Our Search Function
 
 ```javascript
 let runSearch = Contexture({
@@ -245,6 +250,7 @@ Please feel free to dig around these topics by following these links:
 - [Types and Type Components](types/README.md).
 - [MongoDB's NodeJS Package's API](http://mongodb.github.io/node-mongodb-native/3.0/api).
 
+2. The Schemas
 
 ```javascript
 let schemas = {
@@ -270,6 +276,8 @@ You can read more about these here:
 
 - [contexture-mongo repository](https://github.com/smartprocure/contexture-mongo).
 - [Schemas section on our Querying docs](../querying/schemas.md).
+
+3. The MongoDB Client & Our Search Function
 
 ```javascript
 let runSearch = null
