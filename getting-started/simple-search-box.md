@@ -8,7 +8,7 @@ any of the fields that any record might have in the specified database
 or index. To be able to make this text input tied to the search
 structure, we will need to bring `contexture-client` in.  With that in
 mind, and the knowledge we already have of contexture, we can define
-the following tasks that we will need to:
+the following tasks:
 
 1. Create a New Contexture Search Function.
 2. Create a Web Server With a Search Endpoint
@@ -22,7 +22,7 @@ Let's dive in.
 
 Just as how we saw in the previous pages, creating a new Contexture
 search function is about setting up the `contexture` package's default
-epxort with `schemas` and `providers`. In this case, we'll use the
+export with `schemas` and `providers`. In this case, we'll use the
 contexture-mongo approach in the following file (let's call it
 `search.js`):
 
