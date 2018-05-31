@@ -24,4 +24,47 @@
 
 [Source](https://en.wikipedia.org/wiki/Domain-specific_language).
 
+## Search Query
+
+According to Wikipedia, `Search Query`, in the context of the `web`, refers to:
+
+> ...a query that a user enters into a web search engine to satisfy his or her
+> information needs. Web search queries are distinctive in that they are often
+> plain text or hypertext with optional search-directives (such as "and"/"or"
+> with "-" to exclude). They vary greatly from standard query languages, which
+> are governed by strict syntax rules as command languages with keyword or
+> positional parameters.
+
+[Source](https://en.wikipedia.org/wiki/Web_search_query).
+
+## Faceted Search
+
+> Faceted search, also known as faceted navigation or faceted browsing, is a
+> technique used by eCommerce brands to help users analyze, organize, and
+> filter large sets of product inventory based on filters such as size, color,
+> price, and brand.
+
+[Source](https://www.dynamicyield.com/glossary/faceted-search/).
+
+> Faceted search, also called faceted navigation or faceted browsing, is a
+> technique for accessing information organized according to a faceted
+> classification system, allowing users to explore a collection of information
+> by applying multiple filters. A faceted classification system classifies each
+> information element along multiple explicit dimensions, called facets,
+> enabling the classifications to be accessed and ordered in multiple ways
+> rather than in a single, pre-determined, taxonomic order.
+
+[Source](https://en.wikipedia.org/wiki/Faceted_search).
+
+## Search Filter
+
+> An extension of faceted search, a search filter is a specific product
+> attribute a visitor can use to refine the search results of a particular
+> category listing, e.g. by size, color, price, or brand. Multiple filters may
+> be applied to take a broad range of products and refine them into a more
+> narrow selection, allowing the end user to retrieve the most relevant search
+> results based on the criteria they’ve selected.
+
+[Source](https://www.dynamicyield.com/glossary/search-filter/).
+
 [↪ Next: Map of Repos](map-of-repos.md)
