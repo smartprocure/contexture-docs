@@ -16,8 +16,8 @@ this quick guide, we'll achieve the following goals:
 
 **Note:** as you progress through our documentation, you'll discover
 that in some cases, you will need only one or two of these
-repositories. This page just provides the fastest start we can come up
-with.
+repositories. This page just provides the fastest way to start that we
+couldcome up with.
 
 ## Installing Node 9 and NPM
 
