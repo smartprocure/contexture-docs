@@ -313,6 +313,7 @@ You can read more about these topics in the following links:
 
 - [Contexture Core's Default Export](../under-the-hood/contexture-core.md#default-export).
 - [Contexture Providers in detail](under-the-hood/contexture-providers/README.md).
+- [Connecting to MongoDB using the native MongoDB driver for NodeJS](http://mongodb.github.io/node-mongodb-native/api-articles/nodekoarticle1.html#getting-that-connection-to-the-database).
 
 This example and many other important details about
 `contexture-mongo` are accessible in the following links:
