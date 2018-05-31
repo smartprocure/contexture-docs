@@ -45,28 +45,28 @@ project, then run:
 
 ## Installing Contexture Client
 
-To install the `contexture-client` you can also run the followign
+To install the `contexture-client` you can run the following
 command in your project's root folder:
 
     npm install --save contexture-client
 
 ## Installing Contexture ElasticSearch
 
-To install the `contexture-elasticsearch` you can also run the followign
-command in your project's root folder:
+To install the `contexture-elasticsearch` you can also run the
+following command in your project's root folder:
 
     npm install --save contexture-elasticsearch
 
 ## Installing Contexture Mongo
 
-To install the `contexture-mongo` you can also run the followign
+To install the `contexture-mongo` you can also run the following
 command in your project's root folder:
 
     npm install --save contexture-mongo
 
 ## Installing Contexture React
 
-To install the `contexture-react` you can also run the followign
+To install the `contexture-react` you can also run the following
 command in your project's root folder:
 
     npm install --save contexture-react
