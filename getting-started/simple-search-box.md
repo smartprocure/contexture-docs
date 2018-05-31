@@ -63,16 +63,16 @@ collection.
 
 ### 2. Create a Web Server With a Search Endpoint
 
-For the current use case of providing a text input that will run the
-searches, the previous code is going to live in the server. We'll need
-to expose a `/search` endpoint so we can reach this function with the
-client. For this purpose, we'll write a simple web server with
-`express`.
+If we want to separate the direct access to the database from the
+client, the previous code should live in the server.  Our next step is
+to expose a `/search` endpoint so our future client can reach this
+function. In this section, we'll write a simple web server with
+`express` to satisfy our needs.
 
 #### 2.1. Installing the Dependencies
 
-For the following web server example, you'll need to install `express`
-and `body-parser` at the root of your project, as follows:
+You'll need to install `express` and `body-parser` at the root of your
+project, as follows:
 
     npm install --save express body-parser
 
@@ -108,10 +108,9 @@ You can read more about these topics in the following links:
 
 ### 3. Writing a Search Tree
 
-Once we have the contexture DSL processor available through an
-endpoint of a web server, we can follow up with the structure of the
-search interface that we will be writing. We'll conceptualize this by
-writing the Contexture DSL itself.
+Having the DSL processor available through a web server endpoint, we
+can follow up with the structure of the search interface itself. We'll
+conceptualize this by writing the Contexture DSL itself.
 
 Let's use the same `sarchTree` that we used in [our frist
 script](first-script.md):
@@ -134,6 +133,10 @@ let searchTree = {
 }
 ```
 
+Keep in mind that we'll be using `collectionNameSchema` since we
+already defined a schema with that name on the server's `search.js`
+file.
+
 ### 4. Make the Search Tree Aware of Contexture
 
 Having a search tree, we will need `contexture-client` to make it
@@ -148,9 +151,10 @@ the state has changed. For that purpose, we will need to install
 
     npm install --save mobx
 
-Besides the `mobx` dependency, `contexture-client` already provides a
-mobx adapter that we can use out of the box. So, let's first of all
-prepare our `contexture-client` to work well with `mobx`:
+One of the advantages of the `mobx` dependency is that our
+`contexture-client` already provides a mobx adapter that we can use
+out of the box. So, let's first of all prepare our `contexture-client`
+to work well with `mobx`:
 
 ```javascript
 let ContextureClient = require('contexture-client')
@@ -175,6 +179,12 @@ that will later react to both the user input, and the search results.
 ```javascript
 let contextureSearchTree = Contexture(searchTree)
 ```
+
+You can read more about these topics here:
+
+- [MobX](https://mobx.js.org/).
+- [MobX Observers](https://mobx.js.org/refguide/observer-component.html).
+- [Managing the Contexture Search Tree State with MobX](../managing-state/mobx.md).
 
 ### 5. Writing a Text Input
 
@@ -211,5 +221,12 @@ time the contents of the input change. This new search will get the
 results and show the results in a JSON form (because of the
 `JSON.stringify` part). Ideally, you will not render them in a JSON
 form, but render them using a list component or table.
+
+More information here:
+
+- [Interactive Queries](../interactive-queries/README.md).
+- [Available React Components for our Available Types](../types/react-components.md).
+- [Managing State](../managing-state/README.md).
+- [Recommendations](../recommendations/README.md).
 
 [↪ Next: Your First Filter](your-first-filter.md)
