@@ -32,7 +32,7 @@ respective sections of the DSL, so that each result can update each
 one of the components of the user interface. A more detailed
 description is visible in the following diagram.
 
-![Diagram](https://i.imgur.com/L96DVYh.png)
+<p align="center">![Diagram](https://i.imgur.com/L96DVYh.png)</p>
 
 The canonical example of a Contexture Node is faceted search, where
 you have a checkbox list that is both a filter (in the sense that it
@@ -41,7 +41,7 @@ restricts results based on the checked values) and an aggregation
 them to be nested in advanced searches with boolean joins like
 `and`/`or`/`not`.
 
-![Advanced Search Representation](https://i.imgur.com/8ui0t4h.png)
+<p align="center">![Advanced Search Representation](https://i.imgur.com/8ui0t4h.png)</p>
 
 This thought process will become more clear as we progress through the
 docs. Hopefully, some pages later it will be easy to grasp how we
