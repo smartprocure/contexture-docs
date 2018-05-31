@@ -41,7 +41,7 @@ restricts results based on the checked values) and an aggregation
 them to be nested in advanced searches with boolean joins like
 `and`/`or`/`not`.
 
-<p align="center"><img src="https://i.imgur.com/8ui0t4h.png" /></p>
+<p align="center"><img src="https://i.imgur.com/jmU8WuP.png" /></p>
 
 This thought process will become more clear as we progress through the
 docs. Hopefully, some pages later it will be easy to grasp how we
