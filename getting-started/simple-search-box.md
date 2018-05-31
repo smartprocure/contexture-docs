@@ -67,7 +67,7 @@ For the current use case of providing a text input that will run the
 searches, the previous code is going to live in the server. We'll need
 to expose a `/search` endpoint so we can reach this function with the
 client. For this purpose, we'll write a simple web server with
-`express`, as follows:
+`express`.
 
 2.1. Installing the Dependencies
 
