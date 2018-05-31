@@ -15,20 +15,22 @@ this tool is ultimately yours to take.
 
 A quick search over the Internet would reveal that the word
 `contexture` means: `the fact or manner of being woven or linked
-together to form a connected whole` or even `the putting together of
+together to form a connected whole` and also `the putting together of
 words and sentences in connected composition; the construction of a
 text`.
 
-With this word we are trying to expose not only our ultimate
-intentions, but also more or less how the system is built. The way our
-projects work is by a DSL that is used to gather different intended
-search inputs, each one representing some useful abstraction of a
-search filter (like a search input or a tags filter), then using the
-values to process the DSL into one or more different database query
-languages, running the underlying searches as optimized as possible,
-then returning these values on the respective sections of the DSL, so
-that each result can update each one of the components of the user
-interface.
+Picking `contexture` as the name for this project means that we are
+trying to expose not only our ultimate intentions, but also more or
+less how the system is built. The way our projects work is by a DSL
+that is used to gather different intended search inputs, each one
+representing some useful abstraction of a search filter (like an input
+where you can write a word to be searched, or another where you can
+filter the search results by one or more options), then using the
+values to process a DSL that will end up retrieving values from one or
+more different databases, then returning these values on the
+respective sections of the DSL, so that each result can update each
+one of the components of the user interface. A more detailed
+description is visible in the following diagram.
 
 ![Diagram](https://i.imgur.com/L96DVYh.png)
 
@@ -42,7 +44,7 @@ them to be nested in advanced searches with boolean joins like
 This thought process will become more clear as we progress through the
 docs. Hopefully, some pages later it will be easy to grasp how we
 provide a new perspective on building search interfaces, and perhaps
-even how you can use it to power up your business just like we have
+even how you can use it to power up your business, just like we have
 been doing for almost a decade.
 
 [↪ Next: Glossary of Terms](glossary-of-terms.md)  
