@@ -63,10 +63,17 @@ You can also try this same code in Runkit here:
 
 ## What it does
 
+1. Requiring Contexture
+
 ```javascript
 let contexture = require('contexture')
 ```
-We start by requiring `contexture`.
+We start by requiring `contexture`. There's nothing much else to see
+here.
+
+![Random but cute gif taken out of Google](https://i.chzbgr.com/full/6410885376/hC6033E5D/)
+
+2. Writing the Schemas
 
 ```javascript
 let schemas = {
@@ -85,6 +92,8 @@ schema with a key being `collectionNameSchema`, which is going to be
 supported by a single provider `mongo`, from which we'll be looking
 for the `collectionName` collection. We'll learn more about the
 schemas later on, in [Querying → Schemas](../querying/schemas.md).
+
+3. Writing the Contexture DSL
 
 ```javascript
 let searchTree = {
@@ -118,6 +127,8 @@ You can read more about these topics in the following links:
 - [Querying](../querying/README.md).
 - [Types and Type Components](../types/README.md).
 - [Mongo Example Types](../types/mongo-example-types.md).
+
+3. Getting Results
 
 ```javascript
 let result = await contexture({
@@ -166,6 +177,8 @@ You can read more about these concepts here:
 - [Querying](../querying/README.md).
 - [Contexture Providers](../under-the-hood/contexture-providers/README.md).
 - Contexture Core's [Default Export](../under-the-hood/contexture-core.md#default-export).
+
+4. Exploring the Results
 
 ```javascript
 console.log(result.children[1].context.response.results)
