@@ -21,7 +21,7 @@ let elasticsearch = require('elasticsearch')
 let AgentKeepAlive  = require('agentkeepalive')
 
 let elasticClient = null
-let getClient = async () => {
+let getClient = () => {
   if (elasticClient) return elasticClient
   elasticClient = elasticsearch.Client({
     minSockets: 1,
