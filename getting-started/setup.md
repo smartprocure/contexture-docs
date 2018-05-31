@@ -4,8 +4,8 @@
 # Project Setup
 
 The whole Contexture Framework is available through NPM. It doesn't
-have any extra dependency besides Node 9. In this quick guide, we'll
-achieve the following goals:
+have any extra dependency besides Node 9 and some NPM repositories. In
+this quick guide, we'll achieve the following goals:
 
 - [Install Node 9 and NPM](./setup.md#installing-node-9-and-npm)
 - [Install Contexture](./setup.md#installing-contexture)
