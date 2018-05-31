@@ -18,7 +18,7 @@ the following tasks:
 
 Let's dive in.
 
-1. Creating a New Conteture Search Function
+### 1. Creating a New Conteture Search Function
 
 Just as how we saw in the previous pages, creating a new Contexture
 search function is about setting up the `contexture` package's default
@@ -61,7 +61,7 @@ specified the schema's name to be `collectionNameSchema`, and that any
 search using this schema will be using MongoDb's `collectionName`
 collection.
 
-2. Create a Web Server With a Search Endpoint
+### 2. Create a Web Server With a Search Endpoint
 
 For the current use case of providing a text input that will run the
 searches, the previous code is going to live in the server. We'll need
@@ -69,14 +69,14 @@ to expose a `/search` endpoint so we can reach this function with the
 client. For this purpose, we'll write a simple web server with
 `express`.
 
-2.1. Installing the Dependencies
+#### 2.1. Installing the Dependencies
 
 For the following web server example, you'll need to install `express`
 and `body-parser` at the root of your project, as follows:
 
     npm install --save express body-parser
 
-2.2. Writing the Web Server
+#### 2.2. Writing the Web Server
 
 Once you have the dependencies installed, you can set up the server
 with the following code:
@@ -106,7 +106,7 @@ You can read more about these topics in the following links:
 - [Express Documentation](https://expressjs.com/en/api.html).
 - [body-parser repository](https://github.com/expressjs/body-parser).
 
-3. Writing a Search Tree
+### 3. Writing a Search Tree
 
 Once we have the contexture DSL processor available through an
 endpoint of a web server, we can follow up with the structure of the
@@ -134,7 +134,7 @@ let searchTree = {
 }
 ```
 
-4. Make the Search Tree Aware of Contexture
+### 4. Make the Search Tree Aware of Contexture
 
 Having a search tree, we will need `contexture-client` to make it
 smart enough for the user interface. Let's make sure we have it
@@ -176,7 +176,7 @@ that will later react to both the user input, and the search results.
 let contextureSearchTree = Contexture(searchTree)
 ```
 
-5. Writing a Text Input
+### 5. Writing a Text Input
 
 Having the search tree ready allows us to write a `mobx` observer
 component that will receive the tree and react to the result changes
