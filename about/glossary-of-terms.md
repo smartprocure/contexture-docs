@@ -67,4 +67,26 @@ According to Wikipedia, `Search Query`, in the context of the `web`, refers to:
 
 [Source](https://www.dynamicyield.com/glossary/search-filter/).
 
+## Configuration Based Development
+
+> The difference between configuration-driven development and model-driven
+> development is that the former is not restricted to the model of the code
+> such as classes, fields, and relationships. Configuration-driven development
+> (CCD) encompasses anything that can be configured within your application.
+> For example, if your architecture dictates that particular business rules
+> must be applied consistently across your application, you can use
+> configuration files to configure and apply those rules.
+
+[Source](https://www.ibm.com/developerworks/library/wa-configdev/index.html).
+
+## Functional Logic Programming
+
+> Functional logic programming is the combination, in a single programming
+> language, of the paradigms of functional programming (including higher-order
+> programming) and logic programming (nondeterministic programming,
+> unification). This style of programming is embodied by various programming
+> languages, including Curry and Mercury.
+
+[Source](https://en.wikipedia.org/wiki/Functional_logic_programming).
+
 [↪ Next: Map of Repos](map-of-repos.md)
