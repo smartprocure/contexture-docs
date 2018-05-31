@@ -41,6 +41,8 @@ restricts results based on the checked values) and an aggregation
 them to be nested in advanced searches with boolean joins like
 `and`/`or`/`not`.
 
+![Advanced Search Representation](https://i.imgur.com/8ui0t4h.png)
+
 This thought process will become more clear as we progress through the
 docs. Hopefully, some pages later it will be easy to grasp how we
 provide a new perspective on building search interfaces, and perhaps
