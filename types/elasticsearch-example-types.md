@@ -210,10 +210,13 @@ Example output:
 
 ## Exists Type
 
+The `exists` type is used to check wether some property exsits or not.
+It requires only two fields: `field` and `value`.
+
 | Property Name | Type | Description |
 | --- | --- | --- |
-| `field` |  |  |
-| `value` |  |  |
+| `field` | String | The target field we want to check. |
+| `value` | Boolean | the value we want to check. Normally true or false. |
 
 Example input:
 ```javascript
