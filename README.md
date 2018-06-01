@@ -27,7 +27,7 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
   - [Simple Search Box](getting-started/simple-search-box.md)
   - [Your First Filter](getting-started/your-first-filter.md)
   - [Discovering the Database](getting-started/discovering-the-database.md)
-  - [IMDB Index](getting-started/IMDB-example.md)
+  - [IMDB Index](getting-started/imdb-example.md)
 - [Querying](querying/README.md)
   - [Contexture Core](querying/contexture-core.md)
   - [Contexture DSL](querying/contexture-dsl.md)

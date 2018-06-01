@@ -154,10 +154,11 @@ the state has changed. For that purpose, we will need to install
 
     npm install --save mobx
 
-One of the advantages of the `mobx` dependency is that our
-`contexture-client` already provides a mobx adapter that we can use
-out of the box. So, let's first of all prepare our `contexture-client`
-to work well with `mobx`:
+Since we're heavy users of MobX, `contexture-client` already
+provides an adapter that we can use out of the box. Knowing this,
+let's prepare our `contexture-client` to work well with
+`mobx`, as follows:
+
 
 ```javascript
 let ContextureClient = require('contexture-client')
@@ -174,10 +175,10 @@ let Contexture = ContextureMobx({
 })
 ```
 
-With `contexture-client` already prepared with `mobx` and our service
-function, which will send the `searchTree` we previously defined to
-the DSL processor, we can wrap the search tree into a smart object
-that will later react to both the user input, and the search results.
+Note that our service function will be the one responsible for sending
+the `searchTree` we previously defined to the DSL processor, we can
+wrap the search tree into a smart object that will later react to both
+the user input, and the search results.
 
 ```javascript
 let contextureSearchTree = Contexture(searchTree)
@@ -212,7 +213,7 @@ let SearchResults = observer(({ tree }) => (
 ))
 ```
 
-Which would be rendered like:
+Which we would render this way:
 
 ```javascript
 <SearchQuery tree={contextureSearchTree} />

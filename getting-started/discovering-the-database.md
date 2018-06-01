@@ -6,13 +6,14 @@
 One of the great things about Contexture is that it can be used to
 discover the database. In this page, we'll see how to write a filter
 that not only allows the user to refine their search, but that also
-shows previously unknown information about the database.
+shows information about our data that might not be obvious by looking
+at the results directly.
 
 ### The Facet Filter
 
 The `facet` type is just like any other type in the tree. It requires
 a unique key and some other properties. In contrast to previously seen
-types, such as `text` and `number`, facet doesn't require for specific
+types, such as `text` and `number`, facet doesn't require specific
 values, but instead it asks for two properties: `field`, and
 optionally `size`. This type is increadibly useful because besides
 filtering the results based on the `value` (or `values`) the user
@@ -61,7 +62,6 @@ allow users to set a value to this type. In this case, however, we
 will be retrieving the available values from a field that is
 automatically inserted to this part of the tree. Let's make sure we
 have the data before we render the components.
-
 
 ### Fetching the Available Options
 
@@ -118,4 +118,4 @@ You can read more about our available types here:
 
 - [Types and Type Components](../types/README.md)
 
-[↪ Next: IMDB Index](imdb-the-database.md)
+[↪ Next: IMDB Index](imdb-example.md)

@@ -18,4 +18,4 @@ Table of Contents:
 - [Simple Search Box](simple-search-box.md)
 - [Your First Filter](your-first-filter.md)
 - [Discovering the Database](discovering-the-database.md)
-- [IMDB Index](IMDB-example.md)
+- [IMDB Index](imdb-example.md)
