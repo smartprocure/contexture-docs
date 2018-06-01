@@ -137,6 +137,9 @@ Keep in mind that we'll be using `collectionNameSchema` since we
 already defined a schema with that name on the server's `search.js`
 file.
 
+You can read more about writing Contexture DSL queries in our
+[Querying](../querying/README.md) documentation.
+
 ### 4. Make the Search Tree Aware of Contexture
 
 Having a search tree, we will need `contexture-client` to make it
