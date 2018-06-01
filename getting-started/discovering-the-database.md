@@ -15,7 +15,7 @@ The `facet` type is just like any other type in the tree. It requires
 a unique key and some other properties. In contrast to previously seen
 types, such as `text` and `number`, facet doesn't require specific
 values, but instead it asks for two properties: `field`, and
-optionally `size`. This type is increadibly useful because besides
+optionally `size`. This type is incredibly useful because besides
 filtering the results based on the `value` (or `values`) the user
 might have chosen, it retrieves from the database a list of available
 values! The `facet` type can be very well represented as a list of
