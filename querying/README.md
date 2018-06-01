@@ -1,9 +1,11 @@
 ﻿[↩  Parent: Table of Contents](../README.md)
 
- # Querying
+# Querying
 
 Table of Contents:
-- [Contexture Core](contexture-core.md)
 - [Contexture DSL](contexture-dsl.md)
-- [Available providers](available-providers.md)
-- [Schemas](schemas.md)
+- [Interactive Queries](interactive-queries/README.md)
+  - [Contexture Client](interactive-queries/contexture-client.md)
+    - [Initializing the Contexture Client](interactive-queries/contexture-client.md#initializing-the-contexture-client)
+    - [Context Tree](interactive-queries/contexture-client.md#context-tree)
+  - [Introduction to Reactors](interactive-queries/reactors.md)

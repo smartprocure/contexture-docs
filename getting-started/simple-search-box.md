@@ -189,6 +189,10 @@ You can read more about these topics here:
 - [MobX](https://mobx.js.org/).
 - [MobX Observers](https://mobx.js.org/refguide/observer-component.html).
 - [Managing the Contexture Search Tree State with MobX](../managing-state/mobx.md).
+- [Managing the Contexture Search Tree State with MobX](../managing-state/mobx.md).
+- [Introduction to the Contexture Client for Easy Querying](../querying/interactive-queries/contexture-client.md).
+- [Introduction to the Contexture Client for Easy Querying](../querying/interactive-queries/contexture-client.md).
+- [Contexture Client in Detail](../under-the-hood/contexture-client.md).
 
 ### 5. Writing a Text Input
 

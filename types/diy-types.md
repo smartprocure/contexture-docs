@@ -16,13 +16,11 @@ We believe that making a generic framework will allow users to be
 creative on their search solutions. Because of that, we will start this
 document by explaining how to build your own types.
 
-## How to Wite a Type
-
 Writing a new single type is about writing two plain JavaScript Objects:
 - One which is sent to the [Contexture Provider](../querying/available-providers.md).
 - Another one which is sent to the initialization of the [Context Tree](../interactive-queries/contexture-client.md#context-tree).
 
-### Provider Type
+## How to Wite a Provider Type
 
 Initializing [Contexture Core](../querying/contexture-core.md)
 requires you to send a bunch of types per provider. A type on any
@@ -66,7 +64,7 @@ and re-use code even if we switch the target database of the search.
 Once you have a type defined for one or more providers, you should
 write the same type for `contexture-client`.
 
-### Contexture Client Type
+## How to Write a Client Type
 
 Contexture Client already provides a some types based on our
 `Example Types` (more on that later.) These type definitions help
@@ -81,6 +79,10 @@ might need for each one of the following properties:
 | `validate` | Function | Just as the Provider Type's `hasValue`, this function will let `contexture-client` know wether this node is valid for processing or not. |
 | `reactors` | Object | The Reactors is how each of the node properties might affect this node or other nodes. See our [Introduction to Reactors]() |
 | `defaults` | Object | This object will help in the initialization of the nodes of the tree of this specific type through the definition of some default values on the specified properties. |
+
+More details about `contexture-client` types, their properties and
+their reserved words can be seen on the README of
+[contexture-client](https://github.com/smartprocure/contexture-client#client-types).
 
 The example types are already included in any instantiation
 of Contexture Client's Contexture Tree. However, you can add any type
