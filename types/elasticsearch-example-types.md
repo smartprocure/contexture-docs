@@ -228,6 +228,7 @@ Example input:
 ```
 
 Example output:
+
 ```javascript
 {
   exists: {
@@ -311,6 +312,64 @@ TODO:
   facet](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/facet.js).
 - Elastic Search [Terms Query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-terms-query.html).
 
+## Geo Type
+
+| Property Name | Type | Description |
+| --- | --- | --- |
+
+Example input:
+```javascript
+{
+  type: 'geo',
+  field: 'test',
+  location: 'SmartProcure',
+  radius: 10,
+  operator: 'within',
+}
+```
+
+Example output:
+
+```javascript
+{
+  geo_distance: {
+    test: '26.3170479,-80.1131784',
+    distance: '10mi',
+  },
+}
+```
+
+- [Source code of the type: geo](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/geo.js).
+- [Unit tests of the type: geo](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/geo.js).
+
+## Number Type
+
+| Property Name | Type | Description |
+| --- | --- | --- |
+
+Example input:
+```javascript
+{
+  type: 'number',
+  field: 'test',
+  min: 500,
+  max: 1000,
+}
+```
+
+Example output:
+
+```javascript
+{
+  range: {
+    test: {
+      gte: 500,
+      lte: 1000,
+    },
+  },
+}
+```
+ 
 TODO:
 - All the other types!
 
