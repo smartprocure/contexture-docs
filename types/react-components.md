@@ -60,7 +60,7 @@ let DateComponent = require('contexture-react/dist/exampleTypes').Date
 
 ## Date Histogram
 
-![Date Histogram Screenshot](https://i.imgur.com/XwuGi2c.png)
+![Date Histogram Screenshot](https://i.imgur.com/oZsXY5R.png)
 
 (TODO: Purpose)
 
