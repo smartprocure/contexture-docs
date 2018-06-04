@@ -11,8 +11,8 @@ nodes to gather the inputs necessary, and also to show the results
 correctly. Here we'll see components specifically crafted for some of
 our providers' example types.
 
-**Note:** Keep in mind that the styles of these components is purely
-optional. Later on we'll see how to [style our
+**Note:** Keep in mind that the theme on these components is purely
+optional. Later on we'll see how to [theme our
 components](../theming/README.md).
 
 ## Date
@@ -23,9 +23,10 @@ components](../theming/README.md).
 _(Same goes with the right, not adding another screenshot to avoid
 consuming more space.)_
 
-(TODO: Purpose)
-
-Here's how you write a node of type `date` in your _searchTree_:
+The Date component helps by allowing users to filter the data to
+obtain results within a specific range of dates. It consists of only
+two date pickers. Here's how you write a node of type `date` in your
+_searchTree_:
 ```javascript
 {
   type: 'date',
