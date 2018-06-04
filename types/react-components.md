@@ -11,9 +11,14 @@ nodes to gather the inputs necessary, and also to show the results
 correctly. Here we'll see components specifically crafted for some of
 our providers' example types.
 
-**Note:** Keep in mind that the theme on these components is purely
+**Notes:**
+- Keep in mind that the theme on these components is purely
 optional. Later on we'll see how to [theme our
 components](../theming/README.md).
+- Please be aware that when we refer to `Component`, we mean a
+  Function that returns a valid JSX Element. You can read more here:
+  [Components and
+  Props, on the ReactJS docs](https://reactjs.org/docs/components-and-props.html).
 
 ## Query
 
@@ -51,6 +56,15 @@ let Query = require('contexture-react/dist/exampleTypes').Query
 // Later, on your render function, or where you put your components:
 <Query path={['query']} tree={searchTree}/>
 ```
+
+This component can be customized by passing any of the following
+properties:
+
+| Property Name | Type | Default Value | Description |
+| --- | --- | --- | --- |
+| `TextInput` | Component | `input` | Text input component. Useful for any style customization, and for libraries that (for example) wrap Bootstrap and it's classes. |
+
+To read more, check the following links:
 
 - [(ElasticSearch Provider) Source code of the query type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/query.js).
 - [(ElasticSearch Provider) Unit tests of the query type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/query.js).
@@ -98,6 +112,15 @@ let DateComponent = require('contexture-react/dist/exampleTypes').Date
 <DateComponent path={['date']} tree={searchTree}/>
 ```
 
+This component can be customized by passing any of the following
+properties:
+
+| Property Name | Type | Default Value | Description |
+| --- | --- | --- | --- |
+| `DateInput` | Component | `x => <input type="date" {...x} />` | The component that wraps each one of the inputs where the dates end up written by the date-picker. |
+
+To read more, check the following links:
+
 - [(ElasticSearch Provider) Source code of the date type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/date.js).
 - [(ElasticSearch Provider) Unit tests of the date type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/date.js).
 - [(MongoDb Provider) Source code of the date type](https://github.com/smartprocure/contexture-mongo/blob/master/src/example-types/date.js).
@@ -139,6 +162,19 @@ let formatYear = x => new Date(x).getFullYear() + 1
 <DateHistogram path={['dateHistogram']} format={formatYear} tree={searchTree}/>
 ```
 
+This component can be customized by passing any of the following
+properties:
+
+| Property Name | Type | Default Value | Description |
+| --- | --- | --- | --- |
+| `background` | Function | `(record, max) => '#ccc'` | A function that returns the background color that is used to render each one of the bars in the resulting chart. |
+| `height` | Number | `100` | Specifies the max height of the whole chart. |
+| `format` | Function | `value => undefined` | Allows you to change the value that each one of the bars has. |
+| `gutter` | Number | `5` | Allows you to specify the spacing between bars. |
+| `yAxis` | Boolean | `false` | Allows you to specify wether you want Y axis information or not. |
+
+To read more, check the following links:
+
 - [(ElasticSearch Provider) Source code of the dateHistogram type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/dateHistogram.js).
 - [(ElasticSearch Provider) Unit tests of the dateHistogram type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/dateHistogram.js).
 - [Source code of the DateHistogram component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/DateHistogram.js).
@@ -178,6 +214,13 @@ let Facet = require('contexture-react/dist/exampleTypes').Facet
 // Later, on your render function, or where you put your components:
 <Facet path={['facet']} tree={searchTree}/>
 ```
+
+| Property Name | Type | Default Value | Description |
+| --- | --- | --- | --- |
+| `hide.facetFilter` | Object (with an optional single property, `facetFilter`) | `{}` | Allows you to hide the text input that helps on searching for the available options. This text input is very valuable when the results are larger than the available visible results. |
+| `TextInput` | Component | `input` | Allows you to customize the text input. |
+
+To read more, check the following links:
 
 - [(ElasticSearch Provider) Source code of the facet type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/facet.js).
 - [(ElasticSearch Provider) Unit tests of the facet type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/facet.js).
@@ -223,6 +266,15 @@ let Number = require('contexture-react/dist/exampleTypes').Number
 <Number path={['number']} tree={searchTree}/>
 ```
 
+This component can be customized by passing any of the following
+properties:
+
+| Property Name | Type | Default Value | Description |
+| --- | --- | --- | --- |
+| `NumberInput` | Component | `x => <input type="number" {...x} />` | Number input component. Useful for any style customization, and for libraries that (for example) wrap Bootstrap and it's classes. |
+
+To read more, check the following links:
+
 - [(ElasticSearch Provider) Source code of the number type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/number.js).
 - [(ElasticSearch Provider) Unit tests of the number type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/number.js).
 - [(MongoDb Provider) Source code of the number type](https://github.com/smartprocure/contexture-mongo/blob/master/src/example-types/number.js).
@@ -255,6 +307,8 @@ let ResultCount = require('contexture-react/dist/exampleTypes').ResultCount
 <ResultCount path={['results']} tree={searchTree}/>
 ```
 
+To read more, check the following links:
+
 - [(ElasticSearch Provider) Source code of the results type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/results.js).
 - [(ElasticSearch Provider) Unit tests of the results type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/results.js).
 - [(MongoDb Provider) Source code of the results type](https://github.com/smartprocure/contexture-mongo/blob/master/src/example-types/results.js).
@@ -271,10 +325,8 @@ your current page, as well as some controllers to move forward and
 backwards.
 
 The style of this component isn't very friendly, but it's very easy to
-customize. For more about style customization, please visit our
+customize. For more about theme changes, please visit our
 [theming docs](../theming/README.md).
-
-(TODO: Customization options)
 
 Most of your Contexture Trees will have a node with type `results`.
 This node posesses information such as the resulting records
@@ -295,6 +347,17 @@ let ResultPager = require('contexture-react/dist/exampleTypes').ResultPager
 <ResultPager path={['results']} tree={searchTree}/>
 ```
 
+This component can be customized by passing any of the following
+properties:
+
+| Property Name | Type | Default Value | Description |
+| --- | --- | --- | --- |
+| `List` | Component | `div` | The component that wraps the whole list of pages. |
+| `Item` | Component | `span` | The component that wraps each of the available page numbers. |
+| `Link` | Component | `a` | An element that wraps each one of the pagination controls. |
+
+To read more, check the following links:
+
 - [(ElasticSearch Provider) Source code of the results type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/results.js).
 - [(ElasticSearch Provider) Unit tests of the results type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/results.js).
 - [(MongoDb Provider) Source code of the results type](https://github.com/smartprocure/contexture-mongo/blob/master/src/example-types/results.js).
@@ -309,8 +372,6 @@ The ResultTable is a component that will display a table with all the
 available results, in which each of the result values will be
 displayed as columns.
 
-(TODO: Customization options)
-
 the results are automatically writen by the contexture architecture,
 so we'll be simply passing the tree and the path to the results type
 node:
@@ -321,6 +382,15 @@ let resulttable = require('contexture-react/dist/exampletypes').resulttable
 // later, on your render function, or where you put your components:
 <resulttable path={['results']} tree={searchtree}/>
 ```
+
+This component can be customized by passing any of the following
+properties:
+
+| Property Name | Type | Default Value | Description |
+| --- | --- | --- | --- |
+| `Table` | Component | `table` | The component that wraps the table list of results. |
+
+To read more, check the following links:
 
 - [(ElasticSearch Provider) source code of the results type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/results.js).
 - [(elasticSearch Provider) unit tests of the results type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/results.js).
