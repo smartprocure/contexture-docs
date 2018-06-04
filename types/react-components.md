@@ -132,6 +132,45 @@ let Facet = require('contexture-react/dist/exampleTypes').Facet
 - [Source code of the Facet component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/Facet.js).
 
 ## Number
+
+![Number Type Screenshot](https://i.imgur.com/Uuu16wy.png)
+
+(TODO: Purpose)
+
+Here's how you write a node of type `number` in your _searchTree_:
+```javascript
+{
+  key: 'searchNumber',
+  type: 'number',
+  field: 'metaScore',
+  min: 0,
+  max: 100,
+}
+```
+
+Here is the list of properties that this component expects to have on the node:
+
+| Property Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| `min` | Number | No | Minumum number for the range. |
+| `max` | Number | No | Maximum number for the range. |
+
+**Note:** The properties present in the search tree that aren't used by the node
+might be needed for the Provider's type. See the Provider type's
+documentation in our [previous pages](README.md).
+
+Here's how you write your component:
+```javascript
+let Number = require('contexture-react/dist/exampleTypes').Number
+// ...
+// Then, on your render function, or where you put your components:
+<Number path={['number']} tree={searchTree}/>
+```
+
+- [Source code of the number type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/number.js).
+- [Unit tests of the number type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/number.js).
+- [Source code of the Number component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/Number.js).
+
 ## Query
 ## ResultCount
 ## ResultPager
