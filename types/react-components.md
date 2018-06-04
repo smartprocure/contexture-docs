@@ -274,6 +274,8 @@ The style of this component isn't very friendly, but it's very easy to
 customize. For more about style customization, please visit our
 [theming docs](../theming/README.md).
 
+(TODO: Customization options)
+
 Most of your Contexture Trees will have a node with type `results`.
 This node posesses information such as the resulting records
 themselves, but also which page you're in, how many
@@ -306,6 +308,8 @@ let ResultPager = require('contexture-react/dist/exampleTypes').ResultPager
 The ResultTable is a component that will display a table with all the
 available results, in which each of the result values will be
 displayed as columns.
+
+(TODO: Customization options)
 
 the results are automatically writen by the contexture architecture,
 so we'll be simply passing the tree and the path to the results type
