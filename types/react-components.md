@@ -38,7 +38,7 @@ Here's how you write a node of type `date` in your _searchTree_:
 Here is the list of properties that this component expects to have on the node:
 
 | Property Name | Type | Required | Description |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | `from` | Date or String (`YYYY-MM-DD` format) | Yes | The initial date of our timeframe. |
 | `to` | Date or String (`YYYY-MM-DD` format) | No | The final date of our timeframe. |
 
@@ -111,7 +111,7 @@ Here's how you write a node of type `facet` in your _searchTree_:
 Here is the list of properties that this component expects to have on the node:
 
 | Property Name | Type | Required | Description |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | `values` | Array | Yes | Array of selected values. To have a value selected by default, you will need to know in advance which value to put here, otherwise you can leave this with an empty array and let users select the values themselves. |
 | `size` | Number | No | Max number of options to display. The default is 10. |
 
