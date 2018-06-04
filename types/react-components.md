@@ -15,7 +15,9 @@ our providers' example types.
 
 ![Date Type Screenshot 1](https://i.imgur.com/XwuGi2c.png)
 ![Date Type Screenshot 2](https://i.imgur.com/joTECy0.png)
-![Date Type Screenshot 3](https://i.imgur.com/acvIuIS.png)
+
+_(Same goes with the right, not adding another screenshot to avoid
+consuming more space.)_
 
 (Purpose)
 
