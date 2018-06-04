@@ -58,7 +58,7 @@ let DateComponent = require('contexture-react/dist/exampleTypes').Date
 - [Unit tests of the date type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/date.js).
 - [Source code of the Date component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/Date.js).
 
-## DateHistogram
+## Date Histogram
 
 ![Date Histogram Screenshot](https://i.imgur.com/XwuGi2c.png)
 
