@@ -50,17 +50,19 @@ Here's how you write your component:
 ```javascript
 let DateComponent = require('contexture-react/dist/exampleTypes').Date
 // ...
-// Then, on your render function, or where you put your components:
+// Later, on your render function, or where you put your components:
 <DateComponent path={['date']} tree={searchTree}/>
 ```
 
-- [Source code of the date type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/date.js).
-- [Unit tests of the date type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/date.js).
+- [(ElasticSearch Provider) Source code of the date type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/date.js).
+- [(ElasticSearch Provider) Unit tests of the date type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/date.js).
+- [(MongoDb Provider) Source code of the date type](https://github.com/smartprocure/contexture-mongo/blob/master/src/example-types/date.js).
+- [(MongoDb Provider) Unit tests of the date type](https://github.com/smartprocure/contexture-mongo/blob/master/test/example-types/date.js).
 - [Source code of the Date component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/Date.js).
 
-## Date Histogram
+## DateHistogram
 
-![Date Histogram Screenshot](https://i.imgur.com/oZsXY5R.png)
+![DateHistogram Screenshot](https://i.imgur.com/oZsXY5R.png)
 
 (TODO: Purpose)
 
@@ -85,12 +87,12 @@ but only from the results, here's how you write your component:
 let DateHistogram = require('contexture-react/dist/exampleTypes').DateHistogram
 let formatYear = x => new Date(x).getFullYear() + 1
 // ...
-// Then, on your render function, or where you put your components:
+// Later, on your render function, or where you put your components:
 <DateHistogram path={['dateHistogram']} format={formatYear} tree={searchTree}/>
 ```
 
-- [Source code of the dateHistogram type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/dateHistogram.js).
-- [Unit tests of the dateHistogram type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/dateHistogram.js).
+- [(ElasticSearch Provider) Source code of the dateHistogram type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/dateHistogram.js).
+- [(ElasticSearch Provider) Unit tests of the dateHistogram type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/dateHistogram.js).
 - [Source code of the DateHistogram component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/DateHistogram.js).
 
 ## Facet
@@ -123,12 +125,14 @@ Here's how you write your component:
 ```javascript
 let Facet = require('contexture-react/dist/exampleTypes').Facet
 // ...
-// Then, on your render function, or where you put your components:
+// Later, on your render function, or where you put your components:
 <Facet path={['facet']} tree={searchTree}/>
 ```
 
-- [Source code of the facet type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/facet.js).
-- [Unit tests of the facet type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/facet.js).
+- [(ElasticSearch Provider) Source code of the facet type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/facet.js).
+- [(ElasticSearch Provider) Unit tests of the facet type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/facet.js).
+- [(MongoDb Provider) Source code of the facet type](https://github.com/smartprocure/contexture-mongo/blob/master/src/example-types/facet.js).
+- [(MongoDb Provider) Unit tests of the facet type](https://github.com/smartprocure/contexture-mongo/blob/master/test/example-types/facet.js).
 - [Source code of the Facet component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/Facet.js).
 
 ## Number
@@ -163,12 +167,14 @@ Here's how you write your component:
 ```javascript
 let Number = require('contexture-react/dist/exampleTypes').Number
 // ...
-// Then, on your render function, or where you put your components:
+// Later, on your render function, or where you put your components:
 <Number path={['number']} tree={searchTree}/>
 ```
 
-- [Source code of the number type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/number.js).
-- [Unit tests of the number type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/number.js).
+- [(ElasticSearch Provider) Source code of the number type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/number.js).
+- [(ElasticSearch Provider) Unit tests of the number type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/number.js).
+- [(MongoDb Provider) Source code of the number type](https://github.com/smartprocure/contexture-mongo/blob/master/src/example-types/number.js).
+- [(MongoDb Provider) Unit tests of the number type](https://github.com/smartprocure/contexture-mongo/blob/master/test/example-types/number.js).
 - [Source code of the Number component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/Number.js).
 
 ## Query
@@ -201,17 +207,98 @@ Here's how you write your component:
 ```javascript
 let Query = require('contexture-react/dist/exampleTypes').Query
 // ...
-// Then, on your render function, or where you put your components:
+// Later, on your render function, or where you put your components:
 <Query path={['query']} tree={searchTree}/>
 ```
 
-- [Source code of the query type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/query.js).
-- [Unit tests of the query type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/query.js).
+- [(ElasticSearch Provider) Source code of the query type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/query.js).
+- [(ElasticSearch Provider) Unit tests of the query type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/query.js).
+- [(MongoDb Provider) Source code of the query type](https://github.com/smartprocure/contexture-mongo/blob/master/src/example-types/query.js).
+- [(MongoDb Provider) Unit tests of the query type](https://github.com/smartprocure/contexture-mongo/blob/master/test/example-types/query.js).
 - [Source code of the Query component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/Query.js).
 
 ## ResultCount
+
+![ResultCount Type Screenshot](https://i.imgur.com/htuXprD.png)
+
+(TODO: Purpose)
+
+Most of your Contexture Trees will have a node with type `results`.
+This node posesses information such as the resulting records
+themselves, but also which page you're in, how many
+elements are per page you will receive, and the total records there
+are for this given query, which is what we're looking for for this
+type.
+
+All of these properties are automatically writen by the Contexture
+architecture, so we'll be simply passing the tree and the path to the
+results type node:
+
+```javascript
+let ResultCount = require('contexture-react/dist/exampleTypes').ResultCount
+// ...
+// Later, on your render function, or where you put your components:
+<ResultCount path={['results']} tree={searchTree}/>
+```
+
+- [(ElasticSearch Provider) Source code of the results type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/results.js).
+- [(ElasticSearch Provider) Unit tests of the results type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/results.js).
+- [(MongoDb Provider) Source code of the results type](https://github.com/smartprocure/contexture-mongo/blob/master/src/example-types/results.js).
+- [(MongoDb Provider) Unit tests of the results type](https://github.com/smartprocure/contexture-mongo/blob/master/test/example-types/results.js).
+- [Source code of the ResultCount component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/ResultCount.js).
+
 ## ResultPager
+
+![ResultPager Type Screenshot](https://i.imgur.com/h73I2QZ.png)
+
+(TODO: Purpose)
+
+Most of your Contexture Trees will have a node with type `results`.
+This node posesses information such as the resulting records
+themselves, but also which page you're in, how many
+elements are per page you will receive, and the total records there
+are for this given query. We use a combination of those values to get
+how many pages we can move forward (and backwards), and also to move
+around these pages (since our trees react in real time).
+
+All of these properties are automatically writen by the Contexture
+architecture, so we'll be simply passing the tree and the path to the
+results type node:
+
+```javascript
+let ResultPager = require('contexture-react/dist/exampleTypes').ResultPager
+// ...
+// Later, on your render function, or where you put your components:
+<ResultPager path={['results']} tree={searchTree}/>
+```
+
+- [(ElasticSearch Provider) Source code of the results type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/results.js).
+- [(ElasticSearch Provider) Unit tests of the results type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/results.js).
+- [(MongoDb Provider) Source code of the results type](https://github.com/smartprocure/contexture-mongo/blob/master/src/example-types/results.js).
+- [(MongoDb Provider) Unit tests of the results type](https://github.com/smartprocure/contexture-mongo/blob/master/test/example-types/results.js).
+- [Source code of the ResultPager component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/ResultPager.js).
+
 ## ResultTable
-## TermsStats
+
+![resulttable type screenshot](https://i.imgur.com/cc5urub.png)
+
+(todo: purpose)
+
+the results are automatically writen by the contexture architecture,
+so we'll be simply passing the tree and the path to the results type
+node:
+
+```javascript
+let resulttable = require('contexture-react/dist/exampletypes').resulttable
+// ...
+// later, on your render function, or where you put your components:
+<resulttable path={['results']} tree={searchtree}/>
+```
+
+- [(ElasticSearch Provider) source code of the results type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/results.js).
+- [(elasticSearch Provider) unit tests of the results type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/results.js).
+- [(MongoDb Provider) source code of the results type](https://github.com/smartprocure/contexture-mongo/blob/master/src/example-types/results.js).
+- [(MongoDb Provider) unit tests of the results type](https://github.com/smartprocure/contexture-mongo/blob/master/test/example-types/results.js).
+- [Source code of the ResultTable component](https://github.com/smartprocure/contexture-react/blob/master/src/exampletypes/ResultTable.js).
 
 [↪ Next: Other Components](../other-components/README.md)
