@@ -15,6 +15,49 @@ our providers' example types.
 optional. Later on we'll see how to [theme our
 components](../theming/README.md).
 
+## Query
+
+![Query Type Screenshot](https://i.imgur.com/8r2X9MI.png)
+
+The Query component is probably the most commonly needed for search
+interfaces. It's an input field that allows you to filter results if
+the text matches part of the value of a specfic property on any of the
+records.
+
+Here's how you write a node of type `query` in your _searchTree_:
+```javascript
+{
+  key: 'searchQuery',
+  type: 'query',
+  field: 'title',
+  query: ''
+}
+```
+
+Here is the list of properties that this component expects to have on the node:
+
+| Property Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| `query` | String | No | Search query that should be visible in the component. |
+
+**Note:** The properties present in the search tree that aren't used by the node
+might be needed for the Provider's type. See the Provider type's
+documentation in our [previous pages](README.md).
+
+Here's how you write your component:
+```javascript
+let Query = require('contexture-react/dist/exampleTypes').Query
+// ...
+// Later, on your render function, or where you put your components:
+<Query path={['query']} tree={searchTree}/>
+```
+
+- [(ElasticSearch Provider) Source code of the query type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/query.js).
+- [(ElasticSearch Provider) Unit tests of the query type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/query.js).
+- [(MongoDb Provider) Source code of the query type](https://github.com/smartprocure/contexture-mongo/blob/master/src/example-types/query.js).
+- [(MongoDb Provider) Unit tests of the query type](https://github.com/smartprocure/contexture-mongo/blob/master/test/example-types/query.js).
+- [Source code of the Query component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/Query.js).
+
 ## Date
 
 ![Date Type Screenshot 1](https://i.imgur.com/XwuGi2c.png)
@@ -65,7 +108,11 @@ let DateComponent = require('contexture-react/dist/exampleTypes').Date
 
 ![DateHistogram Screenshot](https://i.imgur.com/oZsXY5R.png)
 
-(TODO: Purpose)
+The DateHistogram component is about representing how many records
+were found during what periods of time. This component currently
+doesn't offer interactive features, but you could use it as
+inspiration to write another one that would allow you to dive in these
+date ranges to see what records appear for each one of them.
 
 Here's how you write a node of type `dateHistogram` in your _searchTree_:
 ```javascript
@@ -100,7 +147,9 @@ let formatYear = x => new Date(x).getFullYear() + 1
 
 ![Facet Type Screenshot](https://i.imgur.com/1X3mrfq.png)
 
-(TODO: Purpose)
+The Facet component allows users to filter the results by picking a
+specific common option among all the values that the records might
+have for a specific field.
 
 Here's how you write a node of type `facet` in your _searchTree_:
 ```javascript
@@ -140,7 +189,9 @@ let Facet = require('contexture-react/dist/exampleTypes').Facet
 
 ![Number Type Screenshot](https://i.imgur.com/Uuu16wy.png)
 
-(TODO: Purpose)
+The Number component allows users to specify a numeric range to filter
+the data based on the available results which values fit within this
+range for a specific field.
 
 Here's how you write a node of type `number` in your _searchTree_:
 ```javascript
@@ -178,51 +229,13 @@ let Number = require('contexture-react/dist/exampleTypes').Number
 - [(MongoDb Provider) Unit tests of the number type](https://github.com/smartprocure/contexture-mongo/blob/master/test/example-types/number.js).
 - [Source code of the Number component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/Number.js).
 
-## Query
-
-![Query Type Screenshot](https://i.imgur.com/8r2X9MI.png)
-
-(TODO: Purpose)
-
-Here's how you write a node of type `query` in your _searchTree_:
-```javascript
-{
-  key: 'searchQuery',
-  type: 'query',
-  field: 'title',
-  query: ''
-}
-```
-
-Here is the list of properties that this component expects to have on the node:
-
-| Property Name | Type | Required | Description |
-| --- | --- | --- | --- |
-| `query` | String | No | Search query that should be visible in the component. |
-
-**Note:** The properties present in the search tree that aren't used by the node
-might be needed for the Provider's type. See the Provider type's
-documentation in our [previous pages](README.md).
-
-Here's how you write your component:
-```javascript
-let Query = require('contexture-react/dist/exampleTypes').Query
-// ...
-// Later, on your render function, or where you put your components:
-<Query path={['query']} tree={searchTree}/>
-```
-
-- [(ElasticSearch Provider) Source code of the query type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/query.js).
-- [(ElasticSearch Provider) Unit tests of the query type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/query.js).
-- [(MongoDb Provider) Source code of the query type](https://github.com/smartprocure/contexture-mongo/blob/master/src/example-types/query.js).
-- [(MongoDb Provider) Unit tests of the query type](https://github.com/smartprocure/contexture-mongo/blob/master/test/example-types/query.js).
-- [Source code of the Query component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/Query.js).
-
 ## ResultCount
 
 ![ResultCount Type Screenshot](https://i.imgur.com/htuXprD.png)
 
-(TODO: Purpose)
+The ResultCount component will only show you the number of visible
+results compared to the number of total results. It's not an
+interactive component.
 
 Most of your Contexture Trees will have a node with type `results`.
 This node posesses information such as the resulting records
@@ -252,7 +265,14 @@ let ResultCount = require('contexture-react/dist/exampleTypes').ResultCount
 
 ![ResultPager Type Screenshot](https://i.imgur.com/h73I2QZ.png)
 
-(TODO: Purpose)
+The ResultPager component is an interactive component that will show
+you which page you're at (in the middle) and what pages are around
+your current page, as well as some controllers to move forward and
+backwards.
+
+The style of this component isn't very friendly, but it's very easy to
+customize. For more about style customization, please visit our
+[theming docs](../theming/README.md).
 
 Most of your Contexture Trees will have a node with type `results`.
 This node posesses information such as the resulting records
@@ -283,7 +303,9 @@ let ResultPager = require('contexture-react/dist/exampleTypes').ResultPager
 
 ![resulttable type screenshot](https://i.imgur.com/cc5urub.png)
 
-(todo: purpose)
+The ResultTable is a component that will display a table with all the
+available results, in which each of the result values will be
+displayed as columns.
 
 the results are automatically writen by the contexture architecture,
 so we'll be simply passing the tree and the path to the results type
