@@ -172,6 +172,43 @@ let Number = require('contexture-react/dist/exampleTypes').Number
 - [Source code of the Number component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/Number.js).
 
 ## Query
+
+![Query Type Screenshot](https://i.imgur.com/8r2X9MI.png)
+
+(TODO: Purpose)
+
+Here's how you write a node of type `query` in your _searchTree_:
+```javascript
+{
+  key: 'searchQuery',
+  type: 'query',
+  field: 'title',
+  query: ''
+}
+```
+
+Here is the list of properties that this component expects to have on the node:
+
+| Property Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| `query` | String | No | Search query that should be visible in the component. |
+
+**Note:** The properties present in the search tree that aren't used by the node
+might be needed for the Provider's type. See the Provider type's
+documentation in our [previous pages](README.md).
+
+Here's how you write your component:
+```javascript
+let Query = require('contexture-react/dist/exampleTypes').Query
+// ...
+// Then, on your render function, or where you put your components:
+<Query path={['query']} tree={searchTree}/>
+```
+
+- [Source code of the query type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/query.js).
+- [Unit tests of the query type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/query.js).
+- [Source code of the Query component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/Query.js).
+
 ## ResultCount
 ## ResultPager
 ## ResultTable
