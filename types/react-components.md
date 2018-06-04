@@ -11,6 +11,10 @@ nodes to gather the inputs necessary, and also to show the results
 correctly. Here we'll see components specifically crafted for some of
 our providers' example types.
 
+**Note:** Keep in mind that the styles of these components is purely
+optional. Later on we'll see how to [style our
+components](../theming/README.md).
+
 ## Date
 
 ![Date Type Screenshot 1](https://i.imgur.com/XwuGi2c.png)
@@ -33,13 +37,13 @@ Here's how you write a node of type `date` in your _searchTree_:
 
 Here is the list of properties that this component expects to have on the node:
 
-| Property Name | Type | Description |
+| Property Name | Type | Required | Description |
 | --- | --- | --- |
-| `from` | Date or String (`YYYY-MM-DD` format) | The initial date of our timeframe. |
-| `to` | Date or String (`YYYY-MM-DD` format) | The final date of our timeframe. |
+| `from` | Date or String (`YYYY-MM-DD` format) | Yes | The initial date of our timeframe. |
+| `to` | Date or String (`YYYY-MM-DD` format) | No | The final date of our timeframe. |
 
 **Note:** The properties present in the search tree that aren't used by the node
-might be needed for the provider's type. See the Provider type's
+might be needed for the Provider's type. See the Provider type's
 documentation in our [previous pages](README.md).
 
 Here's how you write your component:
@@ -60,7 +64,7 @@ let DateComponent = require('contexture-react/dist/exampleTypes').Date
 
 (TODO: Purpose)
 
-Here's how you write a node of type `date` in your _searchTree_:
+Here's how you write a node of type `dateHistogram` in your _searchTree_:
 ```javascript
 {
   key: 'releases',
@@ -68,59 +72,12 @@ Here's how you write a node of type `date` in your _searchTree_:
   key_field: 'released',
   value_field: 'imdbVotes',
   interval: '3650d',
-  context: {
-    entries: [
-      {
-        key: 0,
-        doc_count: 1,
-        count: 1,
-        min: 625633,
-        max: 625633,
-        avg: 625633,
-        sum: 625633,
-      },
-      {
-        key: 315360000000,
-        doc_count: 3,
-        count: 3,
-        min: 74450,
-        max: 557731,
-        avg: 355868.3333333333,
-        sum: 1067605,
-      },
-      {
-        key: 630720000000,
-        doc_count: 2,
-        count: 2,
-        min: 82360,
-        max: 376362,
-        avg: 229361,
-        sum: 458722,
-      },
-      {
-        key: 946080000000,
-        doc_count: 4,
-        count: 4,
-        min: 28087,
-        max: 395463,
-        avg: 275019.25,
-        sum: 1100077,
-      },
-      {
-        key: 1261440000000,
-        doc_count: 1,
-        count: 1,
-        min: 264551,
-        max: 264551,
-        avg: 264551,
-        sum: 264551,
-      },
-    ],
-    maxDate: null,
-    minDate: null,
-  },
 }
 ```
+
+**Note:** The properties present in the search tree that aren't used by the node
+might be needed for the Provider's type. See the Provider type's
+documentation in our [previous pages](README.md).
 
 Since this component doesn't need any property from the node itself,
 but only from the results, here's how you write your component:
@@ -137,6 +94,43 @@ let formatYear = x => new Date(x).getFullYear() + 1
 - [Source code of the DateHistogram component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/DateHistogram.js).
 
 ## Facet
+
+![Facet Type Screenshot](https://i.imgur.com/1X3mrfq.png)
+
+(TODO: Purpose)
+
+Here's how you write a node of type `facet` in your _searchTree_:
+```javascript
+{
+  key: 'facet',
+  type: 'facet',
+  values: ['a'],
+}
+```
+
+Here is the list of properties that this component expects to have on the node:
+
+| Property Name | Type | Required | Description |
+| --- | --- | --- |
+| `values` | Array | Yes | Array of selected values. To have a value selected by default, you will need to know in advance which value to put here, otherwise you can leave this with an empty array and let users select the values themselves. |
+| `size` | Number | No | Max number of options to display. The default is 10. |
+
+**Note:** The properties present in the search tree that aren't used by the node
+might be needed for the Provider's type. See the Provider type's
+documentation in our [previous pages](README.md).
+
+Here's how you write your component:
+```javascript
+let Facet = require('contexture-react/dist/exampleTypes').Facet
+// ...
+// Then, on your render function, or where you put your components:
+<Facet path={['facet']} tree={searchTree}/>
+```
+
+- [Source code of the facet type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/facet.js).
+- [Unit tests of the facet type](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/facet.js).
+- [Source code of the Facet component](https://github.com/smartprocure/contexture-react/blob/master/src/exampleTypes/Facet.js).
+
 ## Number
 ## Query
 ## ResultCount
