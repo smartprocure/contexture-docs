@@ -501,8 +501,8 @@ These are generally regex queries.
 | --- | --- | --- |
 | `field` | String | The field we will be using to filter the results. |
 | `join` | String | Either `any`, `all` or `none`. |
-| `operator` | String | . |
-| `values` | Array | . |
+| `operator` | String | `containsWord`, `startsWith`, `wordStartsWith`, `endsWith`, `wordEndsWith`, `is` or `containsExact`. |
+| `values` | Array | Array containing all the words that want to be used as inputs. |
 
 Example input:
 ```js
