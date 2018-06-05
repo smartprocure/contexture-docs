@@ -16,6 +16,20 @@ fulfill you expectations.
 
 Our ElasticSearch types are the following ones:
 
+## Results Type
+
+The `results` node is a node that if present, idicates to Contextre
+that the queries and aggregations should finally run and retrieve all
+the filtered values. It allows some customization properties, as
+shown below:
+
+| Property Name | Type | Description |
+| --- | --- | --- |
+| `page` | Number | Current page of results. |
+| `pageSize` | Number | Total results per page. |
+| `sortField` | String | Field used to sort the results. |
+| `sortDir` | String | Direction of sorting (`asc`, `desc`) |
+
 ## Bool Type
 
 The bool type is intended to work as an ElasticSearch terms
@@ -237,7 +251,7 @@ It requires only two fields: `field` and `value`.
 Example input:
 ```javascript
 {
-  type: 'bool',
+  type: 'exists',
   field: 'fieldName',
   value: true
 }
@@ -486,15 +500,15 @@ These are generally regex queries.
 | Property Name | Type | Description |
 | --- | --- | --- |
 | `field` | String | The field we will be using to filter the results. |
-| `query` | String | String that will be used to match the resulting records, based on the values available for the specified field on each one of the records. |
-| `exact` | Boolean | Wether to match the query text as-is, or to try to be more flexible with the matches (accepting values if they contain the given query, even if the casing doesn't match). |
+| `join` | String | Either `any`, `all` or `none`. |
+| `operator` | String | . |
+| `values` | Array | . |
 
 Example input:
 ```js
 {
-  key: 'test',
   type: 'text',
-  field: 'description',
+  field: 'fieldName',
   join: 'any',
   operator: 'contains',
   values: ['laserjet', 'printer'],
@@ -505,7 +519,7 @@ Example output:
 ```js
 {
   query_string: {
-    default_field: 'description',
+    default_field: 'fieldName',
     default_operator: 'OR',
     query: '"laserjet" "printer"',
   },
@@ -516,5 +530,10 @@ You can read more about it in:
 
 - [Source code of the type: text](https://github.com/smartprocure/contexture-elasticsearch/blob/master/src/example-types/text.js).
 - [Unit tests of the type: text](https://github.com/smartprocure/contexture-elasticsearch/blob/master/test/example-types/text.js).
+
+## Other ElasticSearch Example Types
+
+For more informaion about other available example types, please check:
+<https://github.com/smartprocure/contexture-elasticsearch>
 
 [↪ Next: Mongo Example Types](mongo-example-types.md)
