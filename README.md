@@ -47,6 +47,8 @@ whole. Everythin we currently have here is **WORK IN PROGRESS**.
   - [Mongo Example Types](types/mongo-example-types.md)
   - [Available React Components for Types](types/react-components.md)
 - [Other Components](other-components/README.md)
+  - [Generally Useful Components](other-components/general.md)
+  - [Layout Components](other-components/layout.md)
 - [Managing State](managing-state/README.md)
   - [DIY State Management](managing-state/diy.md)
   - [MobX](managing-state/mobx.md)
