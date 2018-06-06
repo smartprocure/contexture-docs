@@ -2,5 +2,5 @@
 
 # Other Components
 
-- [Generally Useful Components](other-components/general.md).
-- [Layout Components](other-components/layout.md).
+- [Generally Useful Components](general.md).
+- [Layout Components](layout.md).
