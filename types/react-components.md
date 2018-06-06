@@ -251,7 +251,7 @@ Here is the list of properties that this component expects to have on the node:
 
 | Property Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `min` | Number | No | Minumum number for the range. |
+| `min` | Number | No | Minimum number for the range. |
 | `max` | Number | No | Maximum number for the range. |
 
 **Note:** The properties present in the search tree that aren't used by the node
